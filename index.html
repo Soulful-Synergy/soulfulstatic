@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
 
-    <title>Document</title>
+    <title>Soulful Synergy</title>
   </head>
   <body>
     <header>
@@ -86,42 +86,28 @@
       <div id="header-main-bar">
         <div id="main-nav">
           <div id="circle-img">
-            <img
-              src="https://trello-attachments.s3.amazonaws.com/60be4b3418f1755a92602097/60c769c19ef7598c0f6706f8/14c8dd5e4006cfaae71622c122096080/Soulful_Synergy_Logo_(B).png"
-              width="100"
-              height="100"
-              alt="logo"
-            />
-            <h1>Soulful Synergy</h1>
-          </div>
-          <div id="hamburger">
-            <a href ="#" class="toggle-button" onclick="menuClick()">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </a>
+            <img src="./images/logo.png" width="100" height="100" alt="logo" />
           </div>
           <nav>
-            <a href="#">Home</a>
-
-            <a href="#">About</a>
-
-            <a href="#">Why</a>
-
-            <a href="#">Services</a>
-
-            <a href="#">Shop</a>
-
-            <a href="#">Contact</a>
+            <div class="main-nav-1">
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Why</a>
+            </div>
+            <div class="main-nav-2">
+              <a href="#">Services</a>
+              <a href="#">Shop</a>
+              <a href="#">Contact</a>
+            </div>
           </nav>
         </div>
       </div>
       <div id="header-bottom-bar">
         <span class="header-nav-filler"></span>
-        <a href="#" class="nav-link"> <img src="./images/Profits.png"/> Individuals </a>
-        <a href="#" class="nav-link"> <img src="./images/Business.png"/>Businessses </a>
-        <a href="#" class="nav-link"> <img src="./images/GA.png"/>Governments </a>
-        <a href="#" class="nav-link"> <img src="./images/Non-Profits.png"/>Non-Profits </a>
+        <a href="#" class="nav-link"> Individuals </a>
+        <a href="#" class="nav-link"> Businessses </a>
+        <a href="#" class="nav-link"> Governments </a>
+        <a href="#" class="nav-link"> Non-Profits </a>
         <span class="header-nav-filler"></span>
       </div>
     </header>
@@ -139,31 +125,31 @@
         </div>
       </div>
     </div>
-    <main>
-      <h1>Enim mus facilisi, nec cras tempor. Turpis, blandit interdum vehicula imperdiet! Sociis curae; morbi fames? Ut aptent accumsan interdum nam tempus nulla donec adipiscing aliquet at ante litora. Sagittis faucibus viverra sem ut? Dapibus ultricies tincidunt pulvinar facilisis dignissim mi molestie in sollicitudin. Dictumst fringilla curae; habitant ridiculus sagittis. Adipiscing bibendum arcu per malesuada nulla eros pulvinar auctor augue ornare! Lorem est vehicula varius senectus ac montes vitae dapibus vivamus interdum. Bibendum sit habitasse torquent, ultrices vestibulum fermentum lorem dapibus ipsum.</h1>
-    </main>
     <footer>
       <div class="footer-container">
         <div class="footer-section-1">
           <div class="footer-subscribe">
             <p>Subscribe to Our Newsletter</p>
-            <input type="text" />
-            <button>
-              <span class="icon"
-                ><svg
-                  viewBox="64 64 896 896"
-                  focusable="false"
-                  data-icon="arrow-right"
-                  width="1em"
-                  height="1em"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 000-48.4z"
-                  ></path></svg
-              ></span>
-            </button>
+            <div class="center-align">
+              <input type="text" />
+              <button>
+                Subscribe
+                <!-- <span class="icon"
+                  ><svg
+                    viewBox="64 64 896 896"
+                    focusable="false"
+                    data-icon="arrow-right"
+                    width="1em"
+                    height="1em"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 000-48.4z"
+                    ></path></svg
+                ></span> -->
+              </button>
+            </div>
           </div>
           <div class="footer-links">
             <div class="footer-links-col-1">
@@ -277,18 +263,5 @@
         </div>
       </div>
     </footer>
-    <script>
-      function menuClick(){
-        let body = document.getElementById("main-nav");
-        let main = body.getElementsByTagName("nav")[0];
-    
-        if(main.style.display != "flex"){
-            main.style.display = "flex";
-        }
-        else{
-            main.style.display = "none";
-        }
-    }
-    </script>
   </body>
 </html>
