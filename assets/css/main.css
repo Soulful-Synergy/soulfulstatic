@@ -228,7 +228,7 @@ div#sub-nav {
 /* End Header */
 
 #hero {
-    background-image: url(../images/hero.jpeg);
+    background-image: url('../img/hero.jpeg');
     background-size: cover;
     display: flex;
     background-repeat: no-repeat;
