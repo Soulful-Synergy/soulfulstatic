@@ -1,12 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
-    <body>
-        Hello World
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div id="header-top-bar">
+        <div id="header-social-bar">
+          <a target="_blank" href="">
+            <span class="fb-icon header-icon">
+              <svg
+                viewBox="64 64 896 896"
+                focusable="false"
+                data-icon="facebook"
+                width="1em"
+                height="1em"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+          <a target="_blank" href="">
+            <span class="ig-icon header-icon">
+              <svg
+                viewBox="64 64 896 896"
+                focusable="false"
+                data-icon="instagram"
+                width="1em"
+                height="1em"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3 645.3 585.4 645.3 512 585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9 717.1 398.5 717.1 512 625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9 47.9 21.4 47.9 47.9a47.84 47.84 0 01-47.9 47.9z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+          <a target="_blank" href="">
+            <span class="fb-icon header-icon">
+              <svg
+                viewBox="64 64 896 896"
+                focusable="false"
+                data-icon="linkedin"
+                width="1em"
+                height="1em"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1168.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+        </div>
+        <div id="header-search">
+          <input type="text" id="header-search-bar" />
+          <span class="search-icon header-icon">
+            <svg
+              viewBox="64 64 896 896"
+              focusable="false"
+              data-icon="search"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0011.6 0l43.6-43.5a8.2 8.2 0 000-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"
+              ></path>
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div id="header-main-bar">
+        <div id="main-nav">
+          <div id="circle-img">
+            <img
+              src="https://trello-attachments.s3.amazonaws.com/60be4b3418f1755a92602097/60c769c19ef7598c0f6706f8/14c8dd5e4006cfaae71622c122096080/Soulful_Synergy_Logo_(B).png"
+              width="100"
+              height="100"
+              alt="logo"
+            />
+            <h1>Soulful Synergy</h1>
+          </div>
+          <div id="hamburger">
+            <a href ="#" class="toggle-button" onclick="menuClick()">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+          </div>
+          <nav>
+            <a href="#">Home</a>
+
+            <a href="#">About</a>
+
+            <a href="#">Why</a>
+
+            <a href="#">Services</a>
+
+            <a href="#">Shop</a>
+
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+      </div>
+      <div id="header-bottom-bar">
+        <span class="header-nav-filler"></span>
+        <a href="#" class="nav-link"> <img src="./images/Profits.png"/> Individuals </a>
+        <a href="#" class="nav-link"> <img src="./images/Business.png"/>Businessses </a>
+        <a href="#" class="nav-link"> <img src="./images/GA.png"/>Governments </a>
+        <a href="#" class="nav-link"> <img src="./images/Non-Profits.png"/>Non-Profits </a>
+        <span class="header-nav-filler"></span>
+      </div>
+    </header>
+    <div id="hero">
+      <div class="tint">
+        <div class="hero-text-container">
+          <h1>
+            We are a socially conscious <br />
+            consulting company.
+          </h1>
+          <h3>
+            Taking a multifaceted approach to sustainability, <br />
+            workforce and community development.
+          </h3>
+        </div>
+      </div>
+    </div>
+    <main>
+      <h1>Enim mus facilisi, nec cras tempor. Turpis, blandit interdum vehicula imperdiet! Sociis curae; morbi fames? Ut aptent accumsan interdum nam tempus nulla donec adipiscing aliquet at ante litora. Sagittis faucibus viverra sem ut? Dapibus ultricies tincidunt pulvinar facilisis dignissim mi molestie in sollicitudin. Dictumst fringilla curae; habitant ridiculus sagittis. Adipiscing bibendum arcu per malesuada nulla eros pulvinar auctor augue ornare! Lorem est vehicula varius senectus ac montes vitae dapibus vivamus interdum. Bibendum sit habitasse torquent, ultrices vestibulum fermentum lorem dapibus ipsum.</h1>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section-1">
+          <div class="footer-subscribe">
+            <p>Subscribe to Our Newsletter</p>
+            <input type="text" />
+            <button>
+              <span class="icon"
+                ><svg
+                  viewBox="64 64 896 896"
+                  focusable="false"
+                  data-icon="arrow-right"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 000-48.4z"
+                  ></path></svg
+              ></span>
+            </button>
+          </div>
+          <div class="footer-links">
+            <div class="footer-links-col-1">
+              <ul>
+                <li>
+                  <a href="#">Latest News</a>
+                </li>
+                <li>
+                  <a href="#">Job Services</a>
+                </li>
+                <li>
+                  <a href="#">Consulting Services</a>
+                </li>
+                <li>
+                  <a href="#">Green Energy Services</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-links-col-2">
+              <ul>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <span class="copyright-statement">
+              © Copyright Soulful Synergy 2021. All Rights Reserved
+            </span>
+          </div>
+        </div>
+        <div class="footer-section-2">
+          <div class="footer-icons">
+            <div class="footer-icon-1">
+              <img src="./images/mwbe.png" alt="" />
+            </div>
+            <div class="footer-icon-2">
+              <img src="./images/logo.png" alt="" />
+            </div>
+            <div class="footer-social-icons">
+              <hr />
+              <span class="footer-social-icon">
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/Soulful-Synergy-955327927906886/"
+                >
+                  <span class="fb-icon header-icon">
+                    <svg
+                      viewBox="64 64 896 896"
+                      focusable="false"
+                      data-icon="facebook"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z"
+                      ></path>
+                    </svg>
+                  </span>
+                </a>
+              </span>
+              <span class="footer-social-icon">
+                <a target="_blank" href="#">
+                  <span class="ig-icon header-icon">
+                    <svg
+                      viewBox="64 64 896 896"
+                      focusable="false"
+                      data-icon="instagram"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3 645.3 585.4 645.3 512 585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9 717.1 398.5 717.1 512 625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9 47.9 21.4 47.9 47.9a47.84 47.84 0 01-47.9 47.9z"
+                      ></path>
+                    </svg>
+                  </span>
+                </a>
+              </span>
+              <span class="footer-social-icon">
+                <a target="_blank" href="#">
+                  <span class="fb-icon header-icon">
+                    <svg
+                      viewBox="64 64 896 896"
+                      focusable="false"
+                      data-icon="linkedin"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1168.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z"
+                      ></path>
+                    </svg>
+                  </span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function menuClick(){
+        let body = document.getElementById("main-nav");
+        let main = body.getElementsByTagName("nav")[0];
+    
+        if(main.style.display != "flex"){
+            main.style.display = "flex";
+        }
+        else{
+            main.style.display = "none";
+        }
+    }
+    </script>
+  </body>
 </html>
