@@ -1,0 +1,45 @@
+.main {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.services-intro {
+    min-width: 100vw;
+    min-height: 65vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.services-intro-text,
+.services-intro-image {
+    min-width: 50%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.services-intro-text {
+    background-color: #129085;
+    color: white;
+}
+
+.services-intro-text h1 {
+    padding: 0px 20%;
+    font-size: 3rem;
+}
+
+.services-intro-text p {
+    padding: 30px 20%;
+    font-size: 1.4rem;
+}
+
+.services-intro-image {
+    background-image: url('../img/construction.jpg');
+    background-size: cover;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
