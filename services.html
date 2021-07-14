@@ -1,266 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="assets/css/styles.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-        <title>Services - Soulful Synergy</title>
-    </head>
-    <body>
-        <header>
-            <div id="header-top-bar">
-                <div id="header-social-bar">
-                    <a target="_blank" href="">
-                        <span class="fb-icon header-icon">
-                            <svg
-                                viewBox="64 64 896 896"
-                                focusable="false"
-                                data-icon="facebook"
-                                width="1em"
-                                height="1em"
-                                fill="currentColor"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z"
-                                ></path>
-                            </svg>
-                        </span>
-                    </a>
-                    <a target="_blank" href="">
-                        <span class="ig-icon header-icon">
-                            <svg
-                                viewBox="64 64 896 896"
-                                focusable="false"
-                                data-icon="instagram"
-                                width="1em"
-                                height="1em"
-                                fill="currentColor"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3 645.3 585.4 645.3 512 585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9 717.1 398.5 717.1 512 625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9 47.9 21.4 47.9 47.9a47.84 47.84 0 01-47.9 47.9z"
-                                ></path>
-                            </svg>
-                        </span>
-                    </a>
-                    <a target="_blank" href="">
-                        <span class="fb-icon header-icon">
-                            <svg
-                                viewBox="64 64 896 896"
-                                focusable="false"
-                                data-icon="linkedin"
-                                width="1em"
-                                height="1em"
-                                fill="currentColor"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1168.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z"
-                                ></path>
-                            </svg>
-                        </span>
-                    </a>
-                </div>
-                <div id="header-search">
-                    <input type="text" id="header-search-bar" />
-                    <span class="search-icon header-icon">
-                        <svg
-                            viewBox="64 64 896 896"
-                            focusable="false"
-                            data-icon="search"
-                            width="1em"
-                            height="1em"
-                            fill="currentColor"
-                            aria-hidden="true"
-                        >
-                            <path
-                                d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0011.6 0l43.6-43.5a8.2 8.2 0 000-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"
-                            ></path>
-                        </svg>
-                    </span>
-                </div>
-            </div>
-            <div id="header-main-bar">
-                <div id="main-nav">
-                    <div id="circle-img">
-                        <img
-                            src="assets/img/logo.png"
-                            width="100"
-                            height="100"
-                            alt="logo"
-                        />
-                    </div>
-                    <div id="mobile-nav-control">
-                        <div class="hamburger-icon"></div>
-                        <div class="hamburger-icon"></div>
-                        <div class="hamburger-icon"></div>
-                    </div>
-                    <nav>
-                        <div class="main-nav">
-                            <a href="index.html">Home</a>
-                            <a href="#">About</a>
-                            <a href="#">Why</a>
-                        </div>
-                        <div class="main-nav">
-                            <a href="services.html">Services</a>
-                            <a href="#">Shop</a>
-                            <a href="#">Contact</a>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-            <div id="header-bottom-bar">
-                <span class="header-nav-filler"></span>
-                <a href="#" class="nav-link"> Individuals </a>
-                <a href="#" class="nav-link"> Businessses </a>
-                <a href="#" class="nav-link"> Governments </a>
-                <a href="#" class="nav-link"> Non-Profits </a>
-                <span class="header-nav-filler"></span>
-            </div>
-        </header>
-        <div class="main">
-            <div class="services-intro">
-                <div class="services-intro-text">
-                    <h1>Our Services</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing
-                        elit. Aenean commodo ligula eget dolor. Aenean massa.
-                        Cum sociis natoque penatibus et magnis dis parturient
-                        montes, nascetur ridiculus mus. Donec quam felis,
-                        ultricies nec
-                    </p>
-                </div>
-                <div class="services-intro-image"></div>
-            </div>
+    <title>Services - Soulful Synergy</title>
+  </head>
+  <body>
+    <header>
+      <div id="header-top-bar">
+        <div id="header-social-bar">
+          <a target="_blank" href="">
+            <span class="fb-icon header-icon">
+              <svg
+                viewBox="64 64 896 896"
+                focusable="false"
+                data-icon="facebook"
+                width="1em"
+                height="1em"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+          <a target="_blank" href="">
+            <span class="ig-icon header-icon">
+              <svg
+                viewBox="64 64 896 896"
+                focusable="false"
+                data-icon="instagram"
+                width="1em"
+                height="1em"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3 645.3 585.4 645.3 512 585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9 717.1 398.5 717.1 512 625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9 47.9 21.4 47.9 47.9a47.84 47.84 0 01-47.9 47.9z"
+                ></path>
+              </svg>
+            </span>
+          </a>
+          <a target="_blank" href="">
+            <span class="fb-icon header-icon">
+              <svg
+                viewBox="64 64 896 896"
+                focusable="false"
+                data-icon="linkedin"
+                width="1em"
+                height="1em"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1168.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z"
+                ></path>
+              </svg>
+            </span>
+          </a>
         </div>
-        <footer>
-            <div class="footer-container">
-                <div class="footer-section">
-                    <div class="footer-subscribe">
-                        <p>Subscribe to Our Newsletter</p>
-                        <div class="center-align">
-                            <input
-                                type="email"
-                                name="subscriber-email"
-                                placeholder="Email"
-                            />
-                            <button>Subscribe</button>
-                        </div>
-                    </div>
-                    <div class="footer-links">
-                        <div class="footer-links-col">
-                            <ul>
-                                <li>
-                                    <a href="#">Latest News</a>
-                                </li>
-                                <li>
-                                    <a href="#">Job Services</a>
-                                </li>
-                                <li>
-                                    <a href="#">Consulting Services</a>
-                                </li>
-                                <li>
-                                    <a href="#">Green Energy Services</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer-links-col">
-                            <ul>
-                                <li>
-                                    <a href="#">Contact</a>
-                                </li>
-                                <li>
-                                    <a href="#">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Privacy Policy</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <div class="footer-icons">
-                        <div class="footer-icon">
-                            <img src="assets/img/mwbe.png" alt="" />
-                        </div>
-                        <div class="footer-icon">
-                            <img src="assets/img/logo.png" alt="" />
-                        </div>
-                        <div class="footer-social-icons">
-                            <hr />
-                            <span class="footer-social-icon">
-                                <a
-                                    target="_blank"
-                                    href="https://www.facebook.com/Soulful-Synergy-955327927906886/"
-                                >
-                                    <span class="fb-icon header-icon">
-                                        <svg
-                                            viewBox="64 64 896 896"
-                                            focusable="false"
-                                            data-icon="facebook"
-                                            width="1em"
-                                            height="1em"
-                                            fill="currentColor"
-                                            aria-hidden="true"
-                                        >
-                                            <path
-                                                d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z"
-                                            ></path>
-                                        </svg>
-                                    </span>
-                                </a>
-                            </span>
-                            <span class="footer-social-icon">
-                                <a target="_blank" href="#">
-                                    <span class="ig-icon header-icon">
-                                        <svg
-                                            viewBox="64 64 896 896"
-                                            focusable="false"
-                                            data-icon="instagram"
-                                            width="1em"
-                                            height="1em"
-                                            fill="currentColor"
-                                            aria-hidden="true"
-                                        >
-                                            <path
-                                                d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3 645.3 585.4 645.3 512 585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9 717.1 398.5 717.1 512 625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9 47.9 21.4 47.9 47.9a47.84 47.84 0 01-47.9 47.9z"
-                                            ></path>
-                                        </svg>
-                                    </span>
-                                </a>
-                            </span>
-                            <span class="footer-social-icon">
-                                <a target="_blank" href="#">
-                                    <span class="fb-icon header-icon">
-                                        <svg
-                                            viewBox="64 64 896 896"
-                                            focusable="false"
-                                            data-icon="linkedin"
-                                            width="1em"
-                                            height="1em"
-                                            fill="currentColor"
-                                            aria-hidden="true"
-                                        >
-                                            <path
-                                                d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1168.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z"
-                                            ></path>
-                                        </svg>
-                                    </span>
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-copyright">
-                    <span class="copyright-statement">
-                        © Copyright Soulful Synergy 2021. All Rights Reserved
-                    </span>
-                </div>
+        <div id="header-search">
+          <input type="text" id="header-search-bar" />
+          <span class="search-icon header-icon">
+            <svg
+              viewBox="64 64 896 896"
+              focusable="false"
+              data-icon="search"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0011.6 0l43.6-43.5a8.2 8.2 0 000-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"
+              ></path>
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div id="header-main-bar">
+        <div id="main-nav">
+          <div id="circle-img">
+            <img
+              src="assets/img/logo.png"
+              width="100"
+              height="100"
+              alt="logo"
+            />
+          </div>
+          <div id="mobile-nav-control">
+            <div class="hamburger-icon"></div>
+            <div class="hamburger-icon"></div>
+            <div class="hamburger-icon"></div>
+          </div>
+          <nav>
+            <div class="main-nav">
+              <a href="index.html">Home</a>
+              <a href="#">About</a>
+              <a href="#">Why</a>
             </div>
-        </footer>
-    </body>
+            <div class="main-nav">
+              <a href="services.html">Services</a>
+              <a href="#">Shop</a>
+              <a href="#">Contact</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div id="header-bottom-bar">
+        <span class="header-nav-filler"></span>
+        <a href="#" class="nav-link"> Individuals </a>
+        <a href="#" class="nav-link"> Businessses </a>
+        <a href="#" class="nav-link"> Governments </a>
+        <a href="#" class="nav-link"> Non-Profits </a>
+        <span class="header-nav-filler"></span>
+      </div>
+    </header>
+    <div class="main">
+      <div class="services-intro">
+        <div class="services-intro-text">
+          <h1>Our Services</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec
+          </p>
+        </div>
+        <div class="services-intro-image"></div>
+      </div>
+      <div class="services-carousel">
+        <div class="services-carousel-btn-left">
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M25 0C18.3696 0 12.0107 2.63392 7.32233 7.32233C2.63392 12.0107 0 18.3696 0 25C0 31.6304 2.63392 37.9893 7.32233 42.6777C12.0107 47.3661 18.3696 50 25 50C31.6304 50 37.9893 47.3661 42.6777 42.6777C47.3661 37.9893 50 31.6304 50 25C50 18.3696 47.3661 12.0107 42.6777 7.32233C37.9893 2.63392 31.6304 0 25 0V0ZM35.9375 23.4375C36.3519 23.4375 36.7493 23.6021 37.0424 23.8951C37.3354 24.1882 37.5 24.5856 37.5 25C37.5 25.4144 37.3354 25.8118 37.0424 26.1049C36.7493 26.3979 36.3519 26.5625 35.9375 26.5625H17.8344L24.5438 33.2687C24.689 33.414 24.8043 33.5865 24.8829 33.7763C24.9615 33.9661 25.002 34.1696 25.002 34.375C25.002 34.5804 24.9615 34.7839 24.8829 34.9737C24.8043 35.1635 24.689 35.336 24.5438 35.4813C24.3985 35.6265 24.226 35.7418 24.0362 35.8204C23.8464 35.899 23.643 35.9395 23.4375 35.9395C23.232 35.9395 23.0286 35.899 22.8388 35.8204C22.649 35.7418 22.4765 35.6265 22.3312 35.4813L12.9562 26.1063C12.8107 25.9611 12.6953 25.7887 12.6165 25.5989C12.5378 25.409 12.4972 25.2055 12.4972 25C12.4972 24.7945 12.5378 24.591 12.6165 24.4011C12.6953 24.2113 12.8107 24.0389 12.9562 23.8937L22.3312 14.5187C22.6246 14.2254 23.0226 14.0605 23.4375 14.0605C23.8524 14.0605 24.2504 14.2254 24.5438 14.5187C24.8371 14.8121 25.002 15.2101 25.002 15.625C25.002 16.0399 24.8371 16.4379 24.5438 16.7313L17.8344 23.4375H35.9375Z"
+              fill="#1A1E1F"
+            />
+          </svg>
+        </div>
+        <div class="services-carousel-cardholder">
+          <div class="services-carousel-card">
+            <svg
+              width="131"
+              height="139"
+              viewBox="0 0 131 139"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M126.367 89.0803L94.766 74.9114L81.4033 68.9195C87.2392 65.4635 91.9793 60.1298 95.0808 53.7054C97.6678 48.3495 99.0061 42.5354 99.0057 36.6534C99.0057 33.1879 98.4205 29.897 97.6052 26.7218C93.6299 11.3352 80.8464 0 65.5 0C50.4442 0 37.8544 10.9311 33.6328 25.8797C32.6582 29.309 31.9882 32.875 31.9882 36.6534C31.9882 43.2143 33.6187 49.3314 36.3893 54.6519C39.5918 60.824 44.34 65.9131 50.1193 69.185L37.3216 74.7862L4.69572 89.0689C1.86255 90.317 0 93.3215 0 96.6769V130.373C0 134.889 3.34775 138.55 7.48047 138.55H55.937V112.75C55.9437 112.484 56.0267 112.225 56.1772 111.999L56.157 111.988L64.0935 99.0669L64.1137 99.0782C64.3962 98.623 64.8986 98.3006 65.5 98.3006C66.1013 98.3006 66.6038 98.6211 66.8863 99.0782L66.8944 99.0726L66.967 99.1921C66.9771 99.211 66.9912 99.2262 66.9993 99.2452L74.8309 111.993L74.8208 111.999C74.9714 112.225 75.0543 112.485 75.0609 112.752V138.552H123.517C127.65 138.552 131 134.891 131 130.375V96.6769C131.006 93.3329 129.174 90.3569 126.367 89.0803ZM74.8269 80.4405L74.847 80.4519L66.9085 93.3727L66.8883 93.3614C66.7506 93.5941 66.5498 93.7885 66.3063 93.9247C66.0628 94.061 65.7853 94.1342 65.502 94.1371C65.2187 94.1342 64.9412 94.061 64.6977 93.9247C64.4542 93.7885 64.2534 93.5941 64.1157 93.3614L64.1056 93.367L64.0249 93.2362C64.0188 93.2229 64.0067 93.2115 64.0007 93.1982L56.1691 80.4462L56.1772 80.4405C56.0266 80.2143 55.9437 79.9542 55.937 79.6875C55.937 78.8434 56.6655 78.1587 57.5635 78.1587H73.4365C74.3345 78.1587 75.063 78.8434 75.063 79.6875C75.0597 79.9541 74.978 80.2148 74.8269 80.4405Z"
+                fill="white"
+              />
+            </svg>
+
+            <h3>Business Consulting</h3>
+            <p>
+              Pellentesque nisl leo, egestas at viverra vitae, interdum non
+              libero.
+            </p>
+          </div>
+          <div class="services-carousel-card">
+            <svg
+              width="150"
+              height="150"
+              viewBox="0 0 150 150"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M102.05 46.4245C103.106 46.1518 104.226 46.3035 105.171 46.8472C106.116 47.3909 106.81 48.2833 107.104 49.3329C108.488 54.286 108.707 59.4922 107.744 64.544C106.781 69.5958 104.662 74.3562 101.553 78.4528C98.4437 82.5494 94.4289 85.8711 89.8225 88.1579C85.2161 90.4448 80.1431 91.6347 75.0003 91.6347C69.8575 91.6347 64.7845 90.4448 60.1781 88.1579C55.5717 85.8711 51.557 82.5494 48.4479 78.4528C45.3389 74.3562 43.2199 69.5958 42.2568 64.544C41.2936 59.4922 41.5125 54.286 42.8962 49.3329C43.1907 48.2833 43.8849 47.3909 44.8297 46.8472C45.7746 46.3035 46.8949 46.1518 47.9503 46.4245C63.4586 50.4245 86.542 50.4245 102.05 46.4245V46.4245ZM50.167 55.4745C49.7687 58.9736 50.1141 62.5173 51.1807 65.8736C52.2472 69.2298 54.0108 72.3229 56.356 74.9501C58.7011 77.5773 61.5748 79.6795 64.7889 81.1188C68.003 82.5581 71.4849 83.3021 75.0066 83.3021C78.5282 83.3021 82.0101 82.5581 85.2242 81.1188C88.4383 79.6795 91.312 77.5773 93.6571 74.9501C96.0023 72.3229 97.7659 69.2298 98.8324 65.8736C99.899 62.5173 100.244 58.9736 99.8461 55.4745C84.7753 58.5162 65.2336 58.5162 50.167 55.4745Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M54.1667 93.708C29.2208 98.0622 0 109.179 0 125V150H150V125C150 109.179 120.779 98.0622 95.8333 93.708V112.5H54.1667V93.708V93.708ZM29.1667 150V112.5H37.5V150H29.1667ZM116.667 112.5V150H125V112.5H116.667Z"
+                fill="white"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M79.1677 0.241667V18.6666C79.1677 19.7717 78.7287 20.8315 77.9473 21.6129C77.1659 22.3943 76.1061 22.8333 75.001 22.8333C73.8959 22.8333 72.8361 22.3943 72.0547 21.6129C71.2733 20.8315 70.8343 19.7717 70.8343 18.6666V0C66.5327 0.227364 62.3031 1.20015 58.3343 2.875V27C58.3343 28.105 57.8954 29.1648 57.114 29.9462C56.3326 30.7276 55.2728 31.1666 54.1677 31.1666C53.0626 31.1666 52.0028 30.7276 51.2214 29.9462C50.44 29.1648 50.001 28.105 50.001 27V8.06249C44.2927 12.9708 41.001 19.3375 39.9552 24.9166C39.9194 25.1106 39.886 25.3051 39.8552 25.5L39.7718 25.5833C39.401 28.2041 39.6052 30.3625 40.1385 31.8458C40.4801 32.8779 40.4048 34.0027 39.9285 34.9801C39.4523 35.9574 38.6129 36.7099 37.5895 37.077C36.5662 37.444 35.4399 37.3965 34.451 36.9446C33.4622 36.4928 32.6891 35.6723 32.2968 34.6583C32.2262 34.4652 32.1595 34.2707 32.0968 34.075C7.90101 65.6666 142.234 65.6499 117.864 34.0208C117.8 34.2247 117.734 34.4275 117.664 34.6291C117.279 35.6467 116.512 36.4738 115.527 36.9336C114.541 37.3934 113.414 37.4495 112.388 37.0899C111.361 36.7303 110.516 35.9835 110.033 35.0091C109.549 34.0347 109.466 32.9099 109.801 31.875C110.401 30.15 110.576 28 110.251 25.625C110.226 25.6066 110.201 25.5886 110.176 25.5708C109.276 19.9375 105.851 13.7083 100.001 8.79999V27C100.001 28.105 99.562 29.1648 98.7806 29.9462C97.9992 30.7276 96.9394 31.1666 95.8344 31.1666C94.7293 31.1666 93.6695 30.7276 92.8881 29.9462C92.1067 29.1648 91.6677 28.105 91.6677 27V3.59166C90.0408 2.86084 88.3661 2.24136 86.6552 1.7375C84.2069 1.024 81.7019 0.522158 79.1677 0.2375V0.241667Z"
+                fill="white"
+              />
+            </svg>
+
+            <h3>Workforce Development</h3>
+            <p>
+              Pellentesque nisl leo, egestas at viverra vitae, interdum non
+              libero.
+            </p>
+          </div>
+          <div class="services-carousel-card">
+            <svg
+              width="150"
+              height="150"
+              viewBox="0 0 150 150"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M28.125 28.125C28.125 23.1522 30.1004 18.3831 33.6167 14.8667C37.1331 11.3504 41.9022 9.375 46.875 9.375C51.8478 9.375 56.6169 11.3504 60.1333 14.8667C63.6496 18.3831 65.625 23.1522 65.625 28.125C65.625 33.0978 63.6496 37.8669 60.1333 41.3833C56.6169 44.8996 51.8478 46.875 46.875 46.875C41.9022 46.875 37.1331 44.8996 33.6167 41.3833C30.1004 37.8669 28.125 33.0978 28.125 28.125V28.125Z"
+                fill="white"
+              />
+              <path
+                d="M91.6801 42.9711L92.0739 43.2711C96.0516 46.2196 101.034 47.475 105.934 46.7634C110.834 46.0518 115.254 43.4309 118.228 39.4727C121.203 35.5145 122.491 30.5404 121.812 25.6358C121.133 20.7313 118.541 16.2945 114.603 13.2937C110.664 10.293 105.699 8.97191 100.79 9.61879C95.8808 10.2657 91.427 12.828 88.4003 16.7466C85.3736 20.6652 84.0198 25.6219 84.6343 30.535C85.2487 35.448 87.7816 39.9186 91.6801 42.9711V42.9711Z"
+                fill="white"
+              />
+              <path
+                d="M58.7633 56.247C59.9408 54.0173 61.556 52.048 63.5122 50.4569C65.4683 48.8658 67.7254 47.6857 70.1482 46.987C72.571 46.2884 75.1099 46.0856 77.6129 46.3908C80.1159 46.696 82.5316 47.503 84.7155 48.7634C86.8995 50.0238 88.8067 51.7117 90.3232 53.7263C91.8398 55.7408 92.9344 58.0405 93.5415 60.4879C94.1487 62.9352 94.2561 65.4799 93.8571 67.9697C93.4581 70.4594 92.561 72.8432 91.2195 74.9782C88.6388 79.0857 84.5665 82.0331 79.8584 83.2012C75.1502 84.3693 70.1725 83.6673 65.9711 81.2425C61.7696 78.8178 58.6714 74.859 57.3274 70.198C55.9833 65.537 56.498 60.5365 58.7633 56.247V56.247Z"
+                fill="white"
+              />
+              <path
+                d="M23.4375 56.25H48.4688C47.4375 59.1844 46.875 62.3437 46.875 65.625C46.875 72.825 49.5844 79.4062 54.0375 84.375H51.5625C46.7291 84.3743 42.0136 85.8674 38.0614 88.6498C34.1092 91.4323 31.1135 95.3682 29.4844 99.9187C26.3375 98.6546 23.3911 96.9398 20.7375 94.8281C13.6875 89.1562 9.375 80.775 9.375 70.3125C9.375 66.5829 10.8566 63.006 13.4938 60.3688C16.131 57.7316 19.7079 56.25 23.4375 56.25V56.25Z"
+                fill="white"
+              />
+              <path
+                d="M98.4359 84.375C108.608 84.375 117.27 90.8531 120.505 99.9187C123.692 98.6156 126.645 96.9187 129.261 94.8281C136.311 89.1562 140.623 80.775 140.623 70.3125C140.623 66.5829 139.142 63.006 136.505 60.3688C133.867 57.7316 130.291 56.25 126.561 56.25H101.53C102.561 59.1844 103.123 62.3437 103.123 65.625C103.132 72.5448 100.581 79.2233 95.9609 84.375H98.4359Z"
+                fill="white"
+              />
+              <path
+                d="M111.441 102.45C112.125 104.1 112.5 105.919 112.5 107.813C112.5 118.275 108.197 126.656 101.138 132.328C94.1907 137.906 84.8719 140.625 75 140.625C65.1282 140.625 55.8094 137.906 48.8625 132.328C41.8125 126.656 37.5001 118.275 37.5001 107.813C37.4951 105.964 37.8555 104.134 38.5604 102.425C39.2654 100.717 40.301 99.1646 41.6078 97.8578C42.9146 96.551 44.4668 95.5154 46.1752 94.8104C47.8836 94.1055 49.7144 93.7451 51.5625 93.7501H98.4375C101.223 93.7494 103.946 94.5759 106.261 96.1248C108.576 97.6737 110.379 99.8752 111.441 102.45Z"
+                fill="white"
+              />
+            </svg>
+
+            <h3>Community Services</h3>
+            <p>
+              Pellentesque nisl leo, egestas at viverra vitae, interdum non
+              libero.
+            </p>
+          </div>
+          <div class="services-carousel-card">
+            <svg
+              width="130"
+              height="130"
+              viewBox="0 0 130 130"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M41.0927 57.1289C45.7431 59.7526 52.3382 62.9899 60.878 66.8408C69.4179 70.6917 77.3024 74.4157 84.5317 78.0127C91.761 81.6097 97.7008 85.1009 102.351 88.4863C115.795 98.3887 124.969 106.81 129.873 113.75L113.639 130C108.228 119.167 102.393 110.026 96.1366 102.578C80.4098 115.527 63.7528 117.135 46.1659 107.402C39.6553 103.848 33.948 99.9756 29.0439 95.7861C24.1398 91.5967 20.0602 87.6188 16.8049 83.8525C13.5496 80.0863 10.8228 75.3467 8.62439 69.6338C6.42602 63.9209 4.7561 59.0755 3.61463 55.0977C2.47317 51.1198 1.62764 45.4281 1.07805 38.0225C0.528455 30.6169 0.211382 24.7135 0.126829 20.3125C0.0422764 15.9115 0 9.14062 0 0C3.88943 4.31641 8.49756 7.74414 13.8244 10.2832C19.1512 12.8223 24.5626 14.5361 30.0585 15.4248C35.5545 16.3135 41.2829 16.9906 47.2439 17.4561C53.2049 17.9215 59.0813 18.5986 64.8732 19.4873C70.665 20.376 76.2244 21.7301 81.5512 23.5498C86.878 25.3695 91.9512 28.4375 96.7707 32.7539C101.59 37.0703 105.733 42.5293 109.2 49.1309C112.159 54.9707 113.639 61.6146 113.639 69.0625C113.639 73.8867 112.836 78.457 111.229 82.7734C104.465 78.7109 95.5659 73.9714 84.5317 68.5547C73.4976 63.138 63.3089 58.0599 53.9659 53.3203C44.6228 48.5807 37.4569 44.349 32.4683 40.625C27.9024 37.2396 23.3366 32.5423 18.7707 26.5332C17.5024 24.9251 16.7415 24.4173 16.4878 25.0098C16.3187 25.6022 16.2341 28.099 16.2341 32.5C16.2341 35.1237 18.3902 38.4668 22.7024 42.5293C27.0146 46.5918 33.1447 51.4583 41.0927 57.1289Z"
+                fill="white"
+              />
+            </svg>
+
+            <h3>Energy Services</h3>
+            <p>
+              Pellentesque nisl leo, egestas at viverra vitae, interdum non
+              libero.
+            </p>
+          </div>
+        </div>
+        <div class="services-carousel-btn-right">
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M25 50C31.6304 50 37.9893 47.3661 42.6777 42.6777C47.3661 37.9893 50 31.6304 50 25C50 18.3696 47.3661 12.0107 42.6777 7.32233C37.9893 2.63392 31.6304 0 25 0C18.3696 0 12.0107 2.63392 7.32233 7.32233C2.63392 12.0107 0 18.3696 0 25C0 31.6304 2.63392 37.9893 7.32233 42.6777C12.0107 47.3661 18.3696 50 25 50V50ZM14.0625 26.5625C13.6481 26.5625 13.2507 26.3979 12.9576 26.1049C12.6646 25.8118 12.5 25.4144 12.5 25C12.5 24.5856 12.6646 24.1882 12.9576 23.8951C13.2507 23.6021 13.6481 23.4375 14.0625 23.4375H32.1656L25.4562 16.7313C25.311 16.586 25.1957 16.4135 25.1171 16.2237C25.0385 16.0339 24.998 15.8304 24.998 15.625C24.998 15.4196 25.0385 15.2161 25.1171 15.0263C25.1957 14.8365 25.311 14.664 25.4562 14.5187C25.6015 14.3735 25.774 14.2582 25.9638 14.1796C26.1536 14.101 26.357 14.0605 26.5625 14.0605C26.768 14.0605 26.9714 14.101 27.1612 14.1796C27.351 14.2582 27.5235 14.3735 27.6688 14.5187L37.0438 23.8937C37.1893 24.0389 37.3047 24.2113 37.3835 24.4011C37.4622 24.591 37.5028 24.7945 37.5028 25C37.5028 25.2055 37.4622 25.409 37.3835 25.5989C37.3047 25.7887 37.1893 25.9611 37.0438 26.1063L27.6688 35.4813C27.3754 35.7746 26.9774 35.9395 26.5625 35.9395C26.1476 35.9395 25.7496 35.7746 25.4562 35.4813C25.1629 35.1879 24.998 34.7899 24.998 34.375C24.998 33.9601 25.1629 33.5621 25.4562 33.2687L32.1656 26.5625H14.0625Z"
+              fill="#1A1E1F"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="services-body">
+        <h1>Community Services</h1>
+        <img
+          src="./assets/img/construction.jpg"
+          alt="people sitting at a desk."
+          width="20%"
+          height="20%"
+        />
+        <p>
+          Pellentesque nisl leo, egestas at viverra vitae, interdum non libero.
+          Vestibulum ut viverra turpis, ac viverra nisl. In interdum, arcu ac
+          posuere suscipit, tellus sem venenatis sem, dictum condimentum lacus
+          lorem vitae magna. Cras et gravida diam, nec vestibulum augue. Vivamus
+          elementum erat nec justo pulvinar, at porta nunc aliquet. Ut blandit
+          accumsan tortor, at fermentum magna posuere egestas. Pellentesque nisl
+          leo, egestas at viverra vitae, interdum non libero. Vestibulum ut
+          viverra turpis, ac viverra nisl. In interdum, arcu ac posuere
+          suscipit, tellus sem venenatis sem, dictum condimentum lacus lorem
+          vitae magna. Cras et gravida diam, nec vestibulum augue. Vivamus
+          elementum erat nec justo pulvinar, at porta nunc aliquet. Ut blandit
+          accumsan tortor, at fermentum magna posuere egestas.
+        </p>
+        <h3>Sub Heading</h3>
+        <p>
+          Pellentesque nisl leo, egestas at viverra vitae, interdum non libero.
+          Vestibulum ut viverra turpis, ac viverra nisl. In interdum, arcu ac
+          posuere suscipit, tellus sem venenatis sem.
+        </p>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <div class="footer-subscribe">
+            <p>Subscribe to Our Newsletter</p>
+            <div class="center-align">
+              <input type="email" name="subscriber-email" placeholder="Email" />
+              <button>Subscribe</button>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div class="footer-links-col">
+              <ul>
+                <li>
+                  <a href="#">Latest News</a>
+                </li>
+                <li>
+                  <a href="#">Job Services</a>
+                </li>
+                <li>
+                  <a href="#">Consulting Services</a>
+                </li>
+                <li>
+                  <a href="#">Green Energy Services</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-links-col">
+              <ul>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-section">
+          <div class="footer-icons">
+            <div class="footer-icon">
+              <img src="assets/img/mwbe.png" alt="" />
+            </div>
+            <div class="footer-icon">
+              <img src="assets/img/logo.png" alt="" />
+            </div>
+            <div class="footer-social-icons">
+              <hr />
+              <span class="footer-social-icon">
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/Soulful-Synergy-955327927906886/"
+                >
+                  <span class="fb-icon header-icon">
+                    <svg
+                      viewBox="64 64 896 896"
+                      focusable="false"
+                      data-icon="facebook"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z"
+                      ></path>
+                    </svg>
+                  </span>
+                </a>
+              </span>
+              <span class="footer-social-icon">
+                <a target="_blank" href="#">
+                  <span class="ig-icon header-icon">
+                    <svg
+                      viewBox="64 64 896 896"
+                      focusable="false"
+                      data-icon="instagram"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3 645.3 585.4 645.3 512 585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9 717.1 398.5 717.1 512 625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9 47.9 21.4 47.9 47.9a47.84 47.84 0 01-47.9 47.9z"
+                      ></path>
+                    </svg>
+                  </span>
+                </a>
+              </span>
+              <span class="footer-social-icon">
+                <a target="_blank" href="#">
+                  <span class="fb-icon header-icon">
+                    <svg
+                      viewBox="64 64 896 896"
+                      focusable="false"
+                      data-icon="linkedin"
+                      width="1em"
+                      height="1em"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1168.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z"
+                      ></path>
+                    </svg>
+                  </span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <span class="copyright-statement">
+            © Copyright Soulful Synergy 2021. All Rights Reserved
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

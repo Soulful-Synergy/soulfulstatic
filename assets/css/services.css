@@ -1,45 +1,142 @@
 .main {
-    height: 100%;
-    width: 100%;
-    background-color: white;
+  height: 100%;
+  width: 100%;
+  background-color: white;
 }
 
 .services-intro {
-    min-width: 100vw;
-    min-height: 65vh;
-    display: flex;
-    flex-direction: row;
+  min-width: 100vw;
+  min-height: 65vh;
+  display: flex;
+  flex-direction: row;
 }
 
 .services-intro-text,
 .services-intro-image {
-    min-width: 50%;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
+  min-width: 50%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
 }
 
 .services-intro-text {
-    background-color: #129085;
-    color: white;
+  background-color: #264653;
+  color: white;
 }
 
 .services-intro-text h1 {
-    padding: 0px 20%;
-    font-size: 3rem;
+  padding: 0px 20%;
+  font-size: 3rem;
 }
 
 .services-intro-text p {
-    padding: 30px 20%;
-    font-size: 1.4rem;
+  padding: 30px 20%;
+  font-size: 1.4rem;
 }
 
 .services-intro-image {
-    background-image: url('../img/construction.jpg');
-    background-size: cover;
-    display: flex;
-    background-repeat: no-repeat;
-    background-position: center center;
+  background-image: url('../img/construction.jpg');
+  background-size: cover;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.services-carousel {
+  display: flex;
+  min-width: 100vw;
+  min-height: 60vh;
+  background-color: #129085;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-carousel-btn-left {
+}
+
+.services-carousel-btn-left svg:hover,
+.services-carousel-btn-right svg:hover {
+  cursor: pointer;
+  background-color: #e5e1e0;
+  border-radius: 100%;
+}
+
+.services-carousel-btn-left svg:active,
+.services-carousel-btn-right svg:active {
+  cursor: pointer;
+  background-color: #808080;
+  border-radius: 100%;
+}
+
+.services-carousel-btn-right {
+}
+
+.services-carousel-cardholder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-carousel-card svg {
+  color: white;
+}
+
+.services-carousel-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: var(--black);
+  color: white;
+  min-height: 350px;
+  width: 250px;
+  padding: 20px 20px;
+  margin: 20px 20px;
+  border-radius: 10px;
+  /* filter: drop-shadow(0 5px 5px black); */
+
+  /* overflow: hidden; */
+}
+
+.services-carousel-card h3 {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 1.7rem;
+}
+
+.services-carousel-card:hover {
+  cursor: pointer;
+  transition: 0.1s all;
+  border: 5px solid white;
+  /* filter: invert(1); */
+}
+
+.services-body {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 50vh;
+  background-color: #e5e1e0;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 100px;
+}
+
+.services-body h1 {
+  font-size: 3rem;
+  padding-bottom: 40px;
+}
+
+.services-body h3 {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+.services-body p {
+  font-size: 1.2rem;
+  padding-bottom: 20px;
 }
