@@ -383,6 +383,7 @@ footer {
     margin: 0 10px 30px 10px;
 }
 
+
 /* End Footer */
 
 @media (max-width: 575px) {
@@ -466,12 +467,90 @@ footer {
 }
 
 @media (max-width: 768px) {
+       
 }
 
 @media (max-width: 992px) {
 }
 
 @media (max-width: 1200px) {
+        /* Begin Header */
+        div#main-nav nav div.main-nav {
+            display: none;
+            padding: 0;
+        }
+    
+        div#main-nav nav div.main-nav a,
+        div#header-bottom-bar a.nav-link {
+            padding: 0;
+            font-size: 0.8rem;
+        }
+    
+        div#header-bottom-bar {
+            display: none;
+        }
+    
+        div#mobile-nav-control {
+            display: flex;
+            flex-flow: column;
+            position: absolute;
+            left: 10px;
+            bottom: 5px;
+            cursor: pointer;
+        }
+    
+        div.hamburger-icon {
+            width: 35px;
+            height: 3px;
+            background-color: #ffffff;
+            margin: 3px 0;
+        }
+    
+        div#mobile-nav-hamburger {
+            display: block;
+        }
+    
+        /* End Header */
+    
+        /* Begin Footer */
+    
+        footer div.footer-container {
+            padding: 0;
+            display: flex;
+        }
+    
+        footer div.footer-container div.footer-section {
+            margin: 0 auto;
+        }
+    
+        footer div.footer-container div.footer-section:nth-of-type(1) {
+            width: 90%;
+        }
+    
+        footer div.footer-container div.footer-subscribe p {
+            text-align: center;
+            font-size: 1.25rem;
+        }
+    
+        .footer-icons {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        .footer-icons .footer-icon {
+            width: 50%;
+            margin: auto;
+        }
+    
+        .footer-icons .footer-icon img {
+            margin: 10px auto;
+        }
+    
+        .footer-icons .footer-social-icons {
+            margin: 0 auto;
+        }
+    
+        /* End Footer */
 }
 
 @media (max-width: 1400px) {

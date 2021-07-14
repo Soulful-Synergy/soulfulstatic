@@ -1,0 +1,424 @@
+
+div#mobile-bottom-nav{
+    display: none;
+}
+
+@media (max-width: 575px) {
+/* Bottom Navbar Begin */
+
+div#mobile-bottom-nav{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    margin: 0 auto;
+    background-color: #1a1e1f;
+    text-align: center;
+    align-items: center;
+}
+
+div#mobile-bottom-nav a{
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin: auto;
+    font-size: 10px;
+}
+
+/* Bottom Navbar End */
+
+/* Main Begin */
+
+main{
+    width: 100%;
+    margin: auto;
+}
+
+#Pathways, #Impact{
+    background-color: #1a1e1f;
+}
+
+#Pathways h1, #Services h1, #Impact h1{
+    text-decoration: underline;
+}
+
+#Pathways h1, #Impact h1{
+    color: white;
+}
+
+#Pathways h1, #Services h1, #Impact h1, #Testimonials h1, #Events h1{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0 0 0;
+    margin: auto;
+}
+
+main a{
+    text-decoration: none;
+    color: black;
+}
+
+#Pathways .Pathways-Carosel{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 10px 0 30px 0;
+    width: 90%;
+    margin: auto;
+}
+
+#Pathways p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 30px;
+    color: white;
+}
+
+#Pathways a{
+    border-radius: 5%;
+    background-color: white;
+    width: auto;
+}
+
+.Pathways-Carosel a, .Services-Carosel a{
+    padding: 10px 0 50px 0;
+}
+
+#Services .Services-Carosel{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+.Services-Carosel .box{
+    width: 65%;
+    height: 100%;
+    margin: auto;
+    background-color: #1a1e1f;
+    border-radius: 2%;
+    margin-bottom: 30px;
+    padding-top: 50px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.45);
+}
+
+.Services-Carosel a{
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    margin: auto;
+    color: white;
+}
+
+#Services button, #Events button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    font-size: 15px;
+    border: 2px solid white;
+    background-color: #1a1e1f;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#Services p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+#Impact{
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+#Impact p{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+#Impact ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap:30px;
+    padding: 10px 0 30px 0;
+}
+
+#Impact li{
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    margin: auto;
+
+}
+
+.Testimonials-Carosel{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+}
+
+.Testimonials-Carosel img{
+    margin-bottom: 20px;
+}
+
+div .divider{
+    width: 80%;
+    height: 1px;
+    margin: auto;
+    background-color:black;  
+}
+
+.Event-Calendar{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0px 20px 0;
+}
+
+.Event-Calendar .box{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 150px;
+    background-color: #1a1e1f;
+
+}
+
+/* Main Ends */
+
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 1200px) {
+    /* Bottom Navbar Begin */
+
+div#mobile-bottom-nav{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    margin: 0 auto;
+    background-color: #1a1e1f;
+    text-align: center;
+    align-items: center;
+}
+
+div#mobile-bottom-nav a{
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin: auto;
+    font-size: 10px;
+}
+
+/* Bottom Navbar End */
+
+/* Main Begin */
+
+main{
+    width: 100%;
+    margin: auto;
+}
+
+#Pathways, #Impact{
+    background-color: #1a1e1f;
+}
+
+#Pathways h1, #Services h1, #Impact h1{
+    text-decoration: underline;
+}
+
+#Pathways h1, #Impact h1{
+    color: white;
+}
+
+#Pathways h1, #Services h1, #Impact h1, #Testimonials h1, #Events h1{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0 30px 0;
+    margin: auto;
+}
+
+main a{
+    text-decoration: none;
+    color: black;
+}
+
+#Pathways .Pathways-Carosel{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 10px 0 30px 0;
+    width: 90%;
+    margin: auto;
+}
+
+#Pathways p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 30px;
+    color: white;
+}
+
+#Pathways a{
+    /* border: 2px solid white; */
+    border-radius: 5%;
+    background-color: white;
+    width: auto;
+}
+
+.Pathways-Carosel a, .Services-Carosel a{
+    padding: 10px 0 50px 0;
+}
+
+#Services .Services-Carosel{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+.Services-Carosel .box{
+    width: 65%;
+    height: 100%;
+    margin: auto;
+    background-color: #1a1e1f;
+    border-radius: 2%;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.45);
+}
+
+.Services-Carosel a{
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    margin: auto;
+    color: white;
+}
+
+#Services button, #Events button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    font-size: 15px;
+    border: 2px solid white;
+    background-color: #1a1e1f;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#Services p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+#Impact{
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+#Impact p{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+#Impact ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap:30px;
+    padding: 10px 0 30px 0;
+}
+
+#Impact li{
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    margin: auto;
+
+}
+
+.Testimonials-Carosel{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+div .divider{
+    width: 80%;
+    height: 1px;
+    margin: auto;
+    background-color:black;  
+}
+
+.Event-Calendar{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0px 20px 0;
+}
+
+.Event-Calendar .box{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 150px;
+    background-color: #1a1e1f;
+
+}
+
+/* Main Ends */
+}
+
+@media (max-width: 1400px) {
+}
