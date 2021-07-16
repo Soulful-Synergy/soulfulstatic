@@ -2,8 +2,18 @@
 :root {
   --black: #1a1e1f;
   --green1: #0a7e64;
-  --green2: #109977;
+  --green2: hsl(165, 81%, 33%);
   --blue: #1c8aad;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
 }
 
 *,
@@ -166,12 +176,13 @@ nav {
 }
 
 div#main-nav nav div a {
-  padding: 10px 10px;
-  border-radius: 1px;
+  padding: 10px 15px;
+  border-radius: 2px;
   color: white;
   font-weight: 500;
   text-decoration: none;
 }
+
 div#main-nav nav div a:hover {
   color: var(--green1);
   background-color: white;
@@ -197,7 +208,7 @@ div#sub-nav {
 }
 
 #header-bottom-bar {
-  height: 35px;
+  height: 40px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -205,7 +216,7 @@ div#sub-nav {
   background-color: white;
   color: black;
   border-bottom: 1px solid var(--black);
-  /* filter: drop-shadow(0 1px 5px black); */
+  /* filter: drop-shadow(0 1px 10px black); */
 }
 
 #header-bottom-bar .nav-link {
@@ -224,6 +235,23 @@ div#sub-nav {
 
 #header-bottom-bar .nav-link:hover {
   color: var(--green1);
+}
+
+#header-bottom-bar .nav-link::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--green1);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+#header-bottom-bar .nav-link:hover::before {
+  transform: scaleX(1);
 }
 
 /* End Header */
@@ -471,8 +499,6 @@ footer {
 
 @media (max-width: 992px) {
 }
-
-c
 
 @media (max-width: 1400px) {
 }

@@ -36,12 +36,12 @@ div {
 }
 
 .services-intro-text h1 {
-  padding: 0px 20%;
+  padding: 0px 12%;
   font-size: 3rem;
 }
 
 .services-intro-text p {
-  padding: 30px 20%;
+  padding: 30px 12%;
   font-size: 1.4rem;
 }
 
@@ -124,6 +124,16 @@ div {
   /* filter: invert(1); */
 }
 
+.services-card-invert {
+  background-color: #e5e1e0;
+  color: var(--black);
+  border: 5px solid var(--black) !important;
+}
+
+.services-card-invert path {
+  fill: var(--black);
+}
+
 .services-body {
   /* display: flex;
   flex-direction: column;
@@ -137,9 +147,14 @@ div {
   padding: 50px 100px;
 }
 
+.services-body img {
+  border-radius: 5px;
+}
+
 .services-body h1 {
   font-size: 3rem;
-  padding-bottom: 40px;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .services-body h3 {
@@ -161,7 +176,7 @@ div {
 
 .img-wrap-text img {
   float: left;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .img-wrap-text {
@@ -198,6 +213,10 @@ div {
   align-items: center;
 }
 
+.hidden {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .services-body {
     padding: 50px 50px;
@@ -222,5 +241,78 @@ div {
   .img-container {
     width: 70vw;
     margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-intro {
+    flex-direction: column-reverse;
+  }
+
+  .services-intro-text {
+    min-width: 100vw;
+    min-height: 20vh;
+    padding: 25px 20px;
+  }
+  .services-intro-text h1 {
+    padding: 0px 10%;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .services-intro-text p {
+    padding: 15px 10%;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .services-intro-image {
+    min-width: 100vw;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  .img-wrap-text {
+    text-align: center;
+  }
+  .img-wrap-text img {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .services-carousel-card svg {
+    width: 50%;
+    height: 50%;
+  }
+
+  .services-carousel {
+    margin: 0;
+    padding: 0;
+  }
+
+  .services-carousel-card {
+    min-height: 300px;
+    width: 200px;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 10px;
+    /* filter: drop-shadow(0 5px 5px black); */
+
+    /* overflow: hidden; */
+  }
+
+  .services-carousel-btn-left,
+  .services-carousel-btn-right {
+    display: none;
+  }
+
+  .services-carousel-card h3 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
   }
 }
