@@ -1,11 +1,11 @@
 // Relevant Variables
 let cardSelected = 1;
-let cardsVisible = 2;
+let cardsVisible = 4;
 
 const cards = document.querySelectorAll('.services-carousel-card');
 
 // Create a condition that targets viewports at least 768px wide
-const screenSmall = window.matchMedia('(min-width: 576px)');
+const screenSmall = window.matchMedia('(max-width: 576px)');
 const screenMedium = window.matchMedia(
   '(max-width: 768px) and (min-width: 577px)'
 );
@@ -100,3 +100,23 @@ function updateCardsVisible() {
     }
   });
 }
+
+// functionality for the left and right carousel buttons
+
+const leftBtn = document.querySelector('.services-carousel-btn-left');
+const rightBtn = document.querySelector('.services-carousel-btn-right');
+
+leftBtn.addEventListener('click', (e) => {
+  const totalCards = cards.length;
+  if (cardSelected > 1) {
+    cardSelected--;
+    updateCardsVisible();
+  }
+});
+rightBtn.addEventListener('click', (e) => {
+  const totalCards = cards.length;
+  if (cardSelected < totalCards - cardsVisible + 1) {
+    cardSelected++;
+    updateCardsVisible();
+  }
+});

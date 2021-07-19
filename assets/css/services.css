@@ -63,6 +63,13 @@ div {
 }
 
 .services-carousel-btn-left {
+  margin-left: 10px;
+}
+
+.services-carousel-btn-left svg,
+.services-carousel-btn-right svg {
+  width: 75%;
+  height: 75%;
 }
 
 .services-carousel-btn-left svg:hover,
@@ -114,7 +121,7 @@ div {
 .services-carousel-card h3 {
   padding-top: 10px;
   padding-bottom: 20px;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .services-carousel-card:hover {
@@ -307,7 +314,7 @@ div {
 
   .services-carousel-btn-left,
   .services-carousel-btn-right {
-    display: none;
+    /* display: none; */
   }
 
   .services-carousel-card h3 {
