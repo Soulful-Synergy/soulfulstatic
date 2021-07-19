@@ -3,6 +3,7 @@ let cardSelected = 1;
 let cardsVisible = 4;
 
 const cards = document.querySelectorAll('.services-carousel-card');
+const cardBodies = document.querySelectorAll('.card-body');
 
 // Create a condition that targets viewports at least 768px wide
 const screenSmall = window.matchMedia('(max-width: 576px)');
@@ -25,7 +26,7 @@ function handleSmallScreen(e) {
 }
 function handleMediumScreen(e) {
   if (e.matches) {
-    cardsVisible = 2;
+    cardsVisible = 3;
     console.log(cardsVisible);
     updateCardsVisible();
   }
@@ -59,7 +60,7 @@ handleXLargeScreen(screenXLarge);
 // Update cards visible for the first time
 updateCardsVisible();
 
-cards.forEach((el) => {
+cards.forEach((el, cardIndex) => {
   el.addEventListener('click', (e) => {
     cards.forEach((otherEl) => {
       otherEl.classList.remove('services-card-invert');
@@ -68,7 +69,18 @@ cards.forEach((el) => {
     // Updated the currently selected card id
     let cardSelected = getCardNum(el);
 
+    // invert the card on the page to show that it is selected
     el.classList.add('services-card-invert');
+
+    // display the appropriate body article for the card
+    cardBodies.forEach((bodyEl, bodyIndex) => {
+      if (!bodyEl.classList.contains('hidden')) {
+        bodyEl.classList.add('hidden');
+      }
+      if (bodyIndex == cardIndex) {
+        bodyEl.classList.remove('hidden');
+      }
+    });
   });
 });
 
