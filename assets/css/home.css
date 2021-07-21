@@ -1,14 +1,15 @@
 
+
 div#mobile-bottom-nav{
     display: none;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px){
 /* Bottom Navbar Begin */
 
 div#mobile-bottom-nav{
     display: flex;
-    height: 70px;
+    height: auto;
     width: 100%;
     position: sticky;
     bottom: 0;
@@ -20,10 +21,17 @@ div#mobile-bottom-nav{
 
 div#mobile-bottom-nav a{
     display: flex;
+    flex-flow: column;
     color: white;
     justify-content: center;
+    align-items: center;
     margin: auto;
     font-size: 10px;
+    padding: 10px 0 10px 0;
+}
+
+div#mobile-bottom-nav a img{
+    padding-bottom: 2px;
 }
 
 /* Bottom Navbar End */
@@ -50,7 +58,7 @@ main{
 #Pathways h1, #Services h1, #Impact h1, #Testimonials h1, #Events h1{
     font-size: 20px;
     text-align: center;
-    padding: 20px 0 0 0;
+    padding: 20px 0 20px 0;
     margin: auto;
 }
 
@@ -72,6 +80,28 @@ main a{
     margin: auto;
 }
 
+.Pathways-Carosel .box{
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.Pathways-Carosel .box img{
+    margin: auto;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.Pathways-Carosel .box a{
+    display: flex;
+    flex-flow: column;
+}
+
 #Pathways p{
     text-align: center;
     display: flex;
@@ -82,40 +112,53 @@ main a{
     color: white;
 }
 
-#Pathways a{
-    border-radius: 5%;
-    background-color: white;
-    width: auto;
+.Services-Carosel svg.prev{
+    margin: auto;
+    margin-left: 10px;
 }
 
-.Pathways-Carosel a, .Services-Carosel a{
-    padding: 10px 0 50px 0;
+.Services-Carosel svg.next{
+    margin: auto;
+    margin-right: 10px;
 }
 
 #Services .Services-Carosel{
     display: flex;
+    flex-flow: row;
+}
+
+.Services-Carosel .set{
+    display: none;
+}
+
+.Services-Carosel .set.after{
+    display: flex;
     flex-flow: column;
     text-align: center;
+    width: 100%;
+    height: 100%;
     padding: 10px 0 10px 0;
 }
 
 .Services-Carosel .box{
-    width: 65%;
+    width: 180px;
     height: 100%;
     margin: auto;
     background-color: #1a1e1f;
     border-radius: 2%;
     margin-bottom: 30px;
-    padding-top: 50px;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.45);
+    padding: 10px 0 10px 0;
+    box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.45);
 }
 
-.Services-Carosel a{
-    display: flex;
-    justify-content: center;
-    width: 50px;
-    margin: auto;
+.Services-Carosel .box a{
     color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
 }
 
 #Services button, #Events button{
@@ -161,19 +204,45 @@ main a{
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     grid-row-gap:30px;
+    grid-column-gap: 30px;
     padding: 10px 0 30px 0;
+    width: 90%;
+    margin: auto;
 }
 
 #Impact li{
     display: flex;
+    flex-flow: column;
     justify-content: center;
-    width: 50px;
     margin: auto;
 
 }
 
+div#Impact .divider{
+    display: none;
+}
+
 .Testimonials-Carosel{
-    width: 80%;
+    display: flex;
+    flex-flow: row;
+
+}
+
+.Testimonials-Carosel svg.prev{
+    margin: auto;
+    width: 30px;
+    height: 30px;
+}
+
+.Testimonials-Carosel svg.next{
+    margin: auto;
+    width: 30px;
+    height: 30px;
+}
+
+.Testimonials-Carosel .set{
+    display: none;
+    width: 70%;
     margin: auto;
     text-align: center;
     padding: 0px 0px 20px 0px;
@@ -181,6 +250,9 @@ main a{
 
 .Testimonials-Carosel img{
     margin-bottom: 20px;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
 }
 
 div .divider{
@@ -200,11 +272,28 @@ div .divider{
 
 .Event-Calendar .box{
     margin: auto;
+    display: inline-flex;
+    justify-content: center;
     margin-bottom: 20px;
     width: 80%;
-    height: 150px;
+    height: auto;
     background-color: #1a1e1f;
 
+}
+
+.Event-Calendar .box img{
+    margin: auto;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.Event-Calendar .box .info{
+    margin: auto;
+    color: white;
+    margin-left: 10px;
+    width: 100%;
+    text-align: left;
+    align-items: center;
 }
 
 /* Main Ends */
@@ -217,27 +306,15 @@ div .divider{
 @media (max-width: 992px) {
 }
 
-@media (max-width: 1200px) {
-    /* Bottom Navbar Begin */
+@media (max-width: 1024px) and (min-width: 768px) {
+/* Bottom Navbar Begin */
 
 div#mobile-bottom-nav{
-    display: flex;
-    height: 70px;
-    width: 100%;
-    position: sticky;
-    bottom: 0;
-    margin: 0 auto;
-    background-color: #1a1e1f;
-    text-align: center;
-    align-items: center;
+    display: none;
 }
 
-div#mobile-bottom-nav a{
-    display: flex;
-    color: white;
-    justify-content: center;
-    margin: auto;
-    font-size: 10px;
+div#mobile-nav-control{
+    display: none;
 }
 
 /* Bottom Navbar End */
@@ -264,7 +341,7 @@ main{
 #Pathways h1, #Services h1, #Impact h1, #Testimonials h1, #Events h1{
     font-size: 20px;
     text-align: center;
-    padding: 20px 0 30px 0;
+    padding: 20px 0 20px 0;
     margin: auto;
 }
 
@@ -286,6 +363,28 @@ main a{
     margin: auto;
 }
 
+.Pathways-Carosel .box{
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    height: 100%;
+    width: 80%;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.Pathways-Carosel .box img{
+    margin: auto;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.Pathways-Carosel .box a{
+    display: flex;
+    flex-flow: column;
+}
+
 #Pathways p{
     text-align: center;
     display: flex;
@@ -296,40 +395,78 @@ main a{
     color: white;
 }
 
-#Pathways a{
-    /* border: 2px solid white; */
-    border-radius: 5%;
-    background-color: white;
-    width: auto;
-}
-
-.Pathways-Carosel a, .Services-Carosel a{
-    padding: 10px 0 50px 0;
-}
-
-#Services .Services-Carosel{
+div#Services{
     display: flex;
     flex-flow: column;
+    width: 95%;
     text-align: center;
-    padding: 10px 0 10px 0;
+    margin: auto;
+    padding: 30px 0 30px 0;
+}
+
+#Services p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.Services-Carosel{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    margin: 0 auto;
 }
 
 .Services-Carosel .box{
-    width: 65%;
-    height: 100%;
-    margin: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     background-color: #1a1e1f;
-    border-radius: 2%;
-    margin-bottom: 30px;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.45);
+    height: 180px;
+    width: 25%;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+    box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.45);
 }
 
-.Services-Carosel a{
-    display: flex;
+.Services-Carosel .box:hover, .Pathways-Carosel .box:hover{
+    box-shadow: inset 1px 1px 5px white;
+    cursor: pointer;
+}
+
+.Services-Carosel .box img{
     justify-content: center;
-    width: 50px;
-    margin: auto;
+    align-items: center;
+    margin:auto;
+    width: 120px;
+    height: 120px;
+}
+
+.Services-Carosel .box a{
+    font-size: 20px;
     color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.Services-Carosel .set{
+    display: none;
+}
+
+.Services-Carosel .set.after{
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+    width: 90%;
+    justify-content: center;
+    justify-content: space-around;
 }
 
 #Services button, #Events button{
@@ -342,17 +479,8 @@ main a{
     background-color: #1a1e1f;
     border-radius: 20px;
     padding: 10px 20px 10px 20px;
-    margin-bottom: 30px;
+    margin-top: 30px;
     cursor: pointer;
-}
-
-#Services p{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    margin: auto;
-    padding-bottom: 30px;
 }
 
 #Impact{
@@ -376,22 +504,53 @@ main a{
     grid-template-rows: auto auto;
     grid-row-gap:30px;
     padding: 10px 0 30px 0;
+    margin: auto;
 }
 
 #Impact li{
     display: flex;
+    flex-flow: column;
     justify-content: center;
-    width: 50px;
     margin: auto;
 
+}
+
+div#Impact .divider{
+    display: none;
+}
+
+div#group{
+    margin-bottom: 30px;
 }
 
 .Testimonials-Carosel{
-    width: 80%;
+    display: flex;
+    flex-flow: row;
+
+}
+
+.Testimonials-Carosel svg.prev{
+    margin: auto;
+}
+
+.Testimonials-Carosel svg.next{
+    margin: auto;
+}
+
+.Testimonials-Carosel .set{
+    display: none;
+    width: 70%;
     margin: auto;
     text-align: center;
-    padding: 20px 0px 20px 0px;
+    padding: 0px 0px 20px 0px;
+    transition:all 1s ease-in-out;
 }
+
+.Testimonials-Carosel img{
+    margin-bottom: 20px;
+    border-radius: 100%;
+}
+
 
 div .divider{
     width: 80%;
@@ -410,15 +569,323 @@ div .divider{
 
 .Event-Calendar .box{
     margin: auto;
+    display: inline-flex;
+    justify-content: center;
     margin-bottom: 20px;
     width: 80%;
-    height: 150px;
+    height: auto;
     background-color: #1a1e1f;
 
+}
+
+.Event-Calendar .box img{
+    margin: auto;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.Event-Calendar .box .info{
+    margin: auto;
+    color: white;
+    margin-left: 10px;
+    width: 100%;
+    text-align: left;
+    align-items: center;
 }
 
 /* Main Ends */
 }
 
-@media (max-width: 1400px) {
+@media (min-width: 1025px) {
+    /* Desktop View */
+
+/* Main Begins */
+
+div#Pathways{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    width: 100%;
+    background-color: #1a1e1f;
+    padding: 30px 0 30px 0;
+}
+
+div#Pathways h1, #Pathways p{
+    color: white;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+#Pathways p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+div#Pathways .Pathways-Carosel{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.Pathways-Carosel .box{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 180px;
+    width: 25%;
+    margin: 0 30px 0 30px;
+    box-shadow: inset 1px 2px 10px white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45);
+}
+
+.Pathways-Carosel .box img{
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    width: 120px;
+    height: 120px;
+}
+
+.Pathways-Carosel .box a{
+    font-size: 20px;
+    display: flex;
+    flex-flow: column;
+    color: white;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+div#Services{
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    padding: 30px 0 30px 0;
+}
+
+#Services p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.Services-Carosel{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.Services-Carosel .box{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: #1a1e1f;
+    height: 250px;
+    width: 25%;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+    box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.45);
+}
+
+.Services-Carosel .box:hover, .Pathways-Carosel .box:hover{
+    box-shadow: inset 1px 1px 5px white;
+    cursor: pointer;
+}
+
+.Services-Carosel .box img{
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    width: 120px;
+    height: 120px;
+}
+
+.Services-Carosel .box a{
+    font-size: 20px;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.Services-Carosel .set{
+    display: none;
+}
+
+.Services-Carosel .set.after{
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+    width: 90%;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+
+svg.prev:hover, svg.next:hover{
+    background-color: white;
+    border-radius: 100%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+#Services button, #Events button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    font-size: 15px;
+    border: 2px solid white;
+    background-color: #1a1e1f;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+div#Impact{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    background-color: #1a1e1f;
+    color: white;
+    padding: 20px 0 50px 0;
+    margin: 20px 0 20px 0;
+}
+
+div#Impact p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+div#Impact ul{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+div#Impact li{
+    list-style: none;
+    width: 20%;
+    font-size: 20px;
+}
+
+div#Impact .divider{
+    border-left: 1px solid white;
+    height: 100px;
+}
+
+div#group{
+    display: inline-flex;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+div#Testimonials{
+    display: inline-block;
+    flex-flow: column;
+    text-align: center;
+    width: 45%;
+    margin: 3% 2% 4% auto;
+}
+
+div#Testimonials h1 {
+    padding: 10px 0 30px 0;
+}
+.Testimonials-Carosel{
+    display: inline-flex;
+    flex-flow: row;
+}
+
+.Testimonials-Carosel svg.prev{
+    margin: auto;
+}
+
+.Testimonials-Carosel svg.next{
+    margin: auto;
+}
+
+.Testimonials-Carosel .set{
+    display: none;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.Testimonials-Carosel img{
+    margin-bottom: 20px;
+    border-radius: 100%;
+}
+
+.Testimonials-Carosel p{
+    font-size: 20px;
+}
+#group .divider{
+    border-left: 1px solid black;
+    height: 450px;
+    margin-top: 6%;
+    
+}
+
+div#Events{
+    width: 45%;
+    height: 500px;
+    margin: 3% 2% 4% auto;
+    float: right;
+}
+
+div#Events h1{
+    text-align: center;
+}
+
+.Event-Calendar{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0px 20px 0;
+}
+
+.Event-Calendar .box{
+    margin: auto;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 80%;
+    height: auto;
+
+}
+
+.Event-Calendar .box img{
+    margin: auto;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.Event-Calendar .box .info{
+    margin: auto;
+    margin-left: 10px;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+}
+
+/* Main Ends */
+
+/* End of Desktop View */
 }
