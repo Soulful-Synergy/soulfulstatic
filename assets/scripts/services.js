@@ -1,6 +1,7 @@
 // Relevant Variables
 let cardSelected = 1;
 let cardsVisible = 4;
+let visibleCardElements = [];
 
 const cards = document.querySelectorAll('.services-carousel-card');
 const cardBodies = document.querySelectorAll('.card-body');
@@ -67,7 +68,7 @@ cards.forEach((el, cardIndex) => {
     });
 
     // Updated the currently selected card id
-    let cardSelected = getCardNum(el);
+    cardSelected = getCardNum(el);
 
     // invert the card on the page to show that it is selected
     el.classList.add('services-card-invert');
@@ -104,15 +105,18 @@ function updateCardsVisible() {
     );
   }
 
-  // make sure that the there is consistency in the amount of cards visible
-  // as the user resizes the window. e.g. if card-8 of 8 cards was the last
-  // selected card when only 2 cards are visible, when the user resizes the
-  // window to show 4 cards, the previous two cards will also be visible.
+  // Correct amount of cards will be shown as the window is resized:
+  // e.g. if card-8 of 8 cards was the last selected card when only
+  // 2 cards are visible, when the user resizes the window to
+  // show 4 cards, the previous two cards will also be visible.
+  if (cardSelected < 1) cardSelected = 1;
+
   if (cardSelected + cardsVisible > cards.length + 1) {
     cardSelected = cards.length - cardsVisible + 1;
   }
 
   let cardsShown = 0;
+  visibleCardElements = [];
 
   cards.forEach((card) => {
     let cardNum = getCardNum(card);
@@ -124,6 +128,7 @@ function updateCardsVisible() {
     if (cardNum >= cardSelected) {
       if (cardsShown < cardsVisible) {
         card.classList.remove('hidden');
+        visibleCardElements.push(card);
         cardsShown++;
       }
     }
@@ -136,16 +141,10 @@ const leftBtn = document.querySelector('.services-carousel-btn-left');
 const rightBtn = document.querySelector('.services-carousel-btn-right');
 
 leftBtn.addEventListener('click', (e) => {
-  const totalCards = cards.length;
-  if (cardSelected > 1) {
-    cardSelected--;
-    updateCardsVisible();
-  }
+  cardSelected -= cardsVisible;
+  updateCardsVisible();
 });
 rightBtn.addEventListener('click', (e) => {
-  const totalCards = cards.length;
-  if (cardSelected < totalCards - cardsVisible + 1) {
-    cardSelected++;
-    updateCardsVisible();
-  }
+  cardSelected += cardsVisible;
+  updateCardsVisible();
 });
