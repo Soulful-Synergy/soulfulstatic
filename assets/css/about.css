@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Lobster:regular);
+
+:root {
+    --about-white: #f4f4f4;
+    --about-hero-green: #33a26d;
+    --about-section-bg: #4d9e85;
+    --about-award-bg: #2e3e47;
+}
+
+.about-hero {
+    background-image: url('../img/about/sitting-table.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 70vh;
+}
+
+#about-hero-weare,
+#about-hero-soulful,
+#about-hero-subtitle {
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    margin: 15px 0 15px 0;
+}
+
+#about-hero-weare {
+    color: var(--about-white);
+    font-size: 4rem;
+    font-weight: 500;
+}
+#about-hero-soulful {
+    color: var(--about-hero-green);
+    font-size: 5.5rem;
+    font-weight: 700;
+}
+#about-hero-subtitle {
+    color: var(--about-white);
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.about-hero-btn {
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border: 1px solid var(--about-white);
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--about-white);
+    cursor: pointer;
+}
+.about-hero-btn:hover {
+    background-color: var(--about-white);
+    color: var(--black);
+    transition: 0.2s all;
+}
+
+.about-hero-btn:active {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--about-white);
+}
+
+.about-mission {
+    background-color: var(--black);
+    color: var(--about-white);
+    padding: 30px 20px 30px 20px;
+}
+
+.about-mission-text {
+    margin: 50px 0 50px 0;
+    font-family: 'Lobster', Arial, Helvetica, sans-serif;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.about-section-header {
+    background-color: var(--about-section-bg);
+    color: var(--about-white);
+    width: 100%;
+}
+
+.about-section-header h1 {
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 70px 0 70px 0;
+}
+
+.about-history-img {
+    width: 100vw;
+    height: auto;
+    background-color: var(--about-award-bg);
+}
+
+.about-history-img img {
+    width: 100%;
+    height: auto;
+}
+
+.about-award-strip {
+    background-color: var(--about-award-bg);
+    color: white;
+    padding: 30px 0 30px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+}
+
+.about-award-strip img {
+    width: 150px;
+    height: auto;
+}
+
+.about-history-textarea {
+    background-color: var(--black);
+    color: var(--about-white);
+    font-size: 1.2rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    padding: 8vh 5vw 8vh 5vw;
+}
+
+.about-history-textarea-leftcol {
+    margin-right: 5vw;
+}
+.about-history-textarea-rightcol {
+    margin-left: 5vw;
+}
+
+.about-history-textarea-leftcol,
+.about-history-textarea-rightcol {
+    text-align: justify;
+    line-height: 150%;
+}
