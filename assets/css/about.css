@@ -3,6 +3,7 @@
 
 :root {
     --about-white: #f4f4f4;
+    --about-grey: #e9e9e9;
     --about-hero-green: #33a26d;
     --about-section-bg: #4d9e85;
     --about-award-bg: #2e3e47;
@@ -20,24 +21,24 @@
     height: 70vh;
 }
 
-#about-hero-weare,
-#about-hero-soulful,
-#about-hero-subtitle {
+.about-hero-weare,
+.about-hero-soulful,
+.about-hero-subtitle {
     font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
     margin: 15px 0 15px 0;
 }
 
-#about-hero-weare {
+.about-hero-weare {
     color: var(--about-white);
     font-size: 4rem;
     font-weight: 500;
 }
-#about-hero-soulful {
+.about-hero-soulful {
     color: var(--about-hero-green);
     font-size: 5.5rem;
     font-weight: 700;
 }
-#about-hero-subtitle {
+.about-hero-subtitle {
     color: var(--about-white);
     font-size: 2rem;
     margin-bottom: 50px;
@@ -139,4 +140,52 @@
 .about-history-textarea-rightcol {
     text-align: justify;
     line-height: 150%;
+}
+
+.about-team {
+    background-color: var(--black);
+    color: white;
+    display: flex;
+    flex: 1 0 20%;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+.about-team-profile {
+    background-color: var(--about-grey);
+    color: var(--black);
+    margin: 20px;
+    height: 400px;
+    width: 300px;
+}
+
+.about-team-profile-img {
+    width: 300px;
+    height: 300px;
+}
+
+.about-team-profile-img:hover {
+    cursor: pointer;
+    filter: brightness(0.3);
+}
+
+.about-team-profile-img img {
+    height: 300px;
+    width: auto;
+}
+
+.about-team-profile-textarea {
+    overflow: hidden;
+}
+
+.about-team-profile-textarea-name {
+    margin: 15px 10px 5px 10px;
+    color: var(--green1);
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.about-team-profile-textarea-title {
+    margin: 5px 10px 0 10px;
 }
