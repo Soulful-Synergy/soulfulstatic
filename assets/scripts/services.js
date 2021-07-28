@@ -6,8 +6,10 @@ let visibleCardElements = [];
 const cards = document.querySelectorAll('.services-carousel-card');
 const cardBodies = document.querySelectorAll('.card-body');
 
-// Create a condition that targets viewports at least 768px wide
-const screenSmall = window.matchMedia('(max-width: 576px)');
+const screenXSmall = window.matchMedia('(max-width: 400px)');
+const screenSmall = window.matchMedia(
+  '(max-width: 576px) and (min-width: 401px)'
+);
 const screenMedium = window.matchMedia(
   '(max-width: 768px) and (min-width: 577px)'
 );
@@ -18,8 +20,18 @@ const screenXLarge = window.matchMedia(
   '(max-width: 1200px) and (min-width: 993px)'
 );
 
+function handleXSmallScreen(e) {
+  if (e.matches) {
+    console.log('here');
+    cardsVisible = 1;
+    console.log(cardsVisible);
+    updateCardsVisible();
+  }
+}
+
 function handleSmallScreen(e) {
   if (e.matches) {
+    console.log('not here');
     cardsVisible = 2;
     console.log(cardsVisible);
     updateCardsVisible();
@@ -48,11 +60,13 @@ function handleXLargeScreen(e) {
 }
 
 // Register event listener
+screenXSmall.addEventListener('change', handleXSmallScreen);
 screenSmall.addEventListener('change', handleSmallScreen);
 screenMedium.addEventListener('change', handleMediumScreen);
 screenLarge.addEventListener('change', handleLargeScreen);
 screenXLarge.addEventListener('change', handleXLargeScreen);
 
+handleXSmallScreen(screenXSmall);
 handleSmallScreen(screenSmall);
 handleMediumScreen(screenMedium);
 handleLargeScreen(screenLarge);
