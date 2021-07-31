@@ -207,7 +207,7 @@
     margin-bottom: 15px;
     border-radius: 5px;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.2s ease-in-out;
 }
 
 .single-photo img:hover {
@@ -216,4 +216,21 @@
 
 .single-photo img:active {
     filter: brightness(0.3);
+}
+
+.about-partners {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 40px;
+    background-color: white;
+}
+
+.about-partner-logo img {
+    max-height: 150px;
+    max-width: 28vw;
+    width: auto;
+    padding: 20px;
 }
