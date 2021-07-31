@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="assets/css/styles.css" />
-
+        <link href="./assets/css/lightbox.min.css" rel="stylesheet" />
         <title>About Us - Soulful Synergy</title>
     </head>
     <body>
@@ -221,20 +221,7 @@
                         alt="A group of people holding their certifications"
                     />
                 </div>
-                <div class="about-award-strip">
-                    <div class="about-award-img">
-                        <img src="./assets/img/mwbe.png" alt="MWBE Award" />
-                    </div>
-                    <div class="about-award-img">
-                        <img src="./assets/img/mwbe.png" alt="MWBE Award" />
-                    </div>
-                    <div class="about-award-img">
-                        <img src="./assets/img/mwbe.png" alt="MWBE Award" />
-                    </div>
-                    <div class="about-award-img">
-                        <img src="./assets/img/mwbe.png" alt="MWBE Award" />
-                    </div>
-                </div>
+
                 <div class="about-history-textarea">
                     <div class="about-history-textarea-leftcol">
                         Maecenas non turpis id arcu blandit lobortis. Orci
@@ -258,6 +245,20 @@
                         Maecenas suscipit lectus urna, blandit sollicitudin
                         risus mattis in.
                     </div>
+                </div>
+            </div>
+            <div class="about-award-strip">
+                <div class="about-award-img">
+                    <img src="./assets/img/mwbe.png" alt="MWBE Award" />
+                </div>
+                <div class="about-award-img">
+                    <img src="./assets/img/mwbe.png" alt="MWBE Award" />
+                </div>
+                <div class="about-award-img">
+                    <img src="./assets/img/mwbe.png" alt="MWBE Award" />
+                </div>
+                <div class="about-award-img">
+                    <img src="./assets/img/mwbe.png" alt="MWBE Award" />
                 </div>
             </div>
             <div class="about-section-header">
@@ -377,9 +378,58 @@
                     <img src="./assets/img/mwbe.png" alt="MWBE Award" />
                 </div>
             </div>
+            <div class="photos-single-column">
+                <div class="single-photo">
+                    <a
+                        href="./assets/img/about/photo1.jpg"
+                        data-lightbox="about-lightbox-strip-1"
+                        ><img src="./assets/img/about/photo1.jpg" alt=""
+                    /></a>
+                </div>
+                <div class="single-photo">
+                    <a
+                        href="./assets/img/about/photo2.jpg"
+                        data-lightbox="about-lightbox-strip-1"
+                        ><img src="./assets/img/about/photo2.jpg" alt=""
+                    /></a>
+                </div>
+                <div class="single-photo">
+                    <a
+                        href="./assets/img/about/photo3.jpg"
+                        data-lightbox="about-lightbox-strip-1"
+                        ><img src="./assets/img/about/photo3.jpg" alt=""
+                    /></a>
+                </div>
+            </div>
             <div class="about-section-header">
                 <div class="flex-center-v-h">
-                    <h1>HOW WE DO WHAT WE DO</h1>
+                    <h1>OUR ECOSYSTEM</h1>
+                </div>
+                <div class="photos-single-column">
+                    <div class="single-photo">
+                        <a
+                            href="./assets/img/about/photo1.jpg"
+                            data-lightbox="about-lightbox-strip-2"
+                            ><img src="./assets/img/about/photo1.jpg" alt=""
+                        /></a>
+                    </div>
+                    <div class="single-photo">
+                        <a
+                            href="./assets/img/about/photo2.jpg"
+                            data-lightbox="about-lightbox-strip-2"
+                            ><img src="./assets/img/about/photo2.jpg" alt=""
+                        /></a>
+                    </div>
+                    <div class="single-photo">
+                        <a
+                            href="./assets/img/about/photo3.jpg"
+                            data-lightbox="about-lightbox-strip-2"
+                            ><img src="./assets/img/about/photo3.jpg" alt=""
+                        /></a>
+                    </div>
+                </div>
+                <div class="flex-center-v-h">
+                    <h1>OUR PARTNERS</h1>
                 </div>
             </div>
         </div>
@@ -510,5 +560,13 @@
                 </div>
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./assets/scripts/lightbox.min.js"></script>
+        <script>
+            lightbox.option({
+                resizeDuration: 400,
+                wrapAround: true,
+            });
+        </script>
     </body>
 </html>

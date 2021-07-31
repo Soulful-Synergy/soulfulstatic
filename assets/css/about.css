@@ -189,3 +189,31 @@
 .about-team-profile-textarea-title {
     margin: 5px 10px 0 10px;
 }
+
+.photos-single-column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 40px;
+    background-color: var(--black);
+}
+
+.single-photo img {
+    max-height: 250px;
+    max-width: 80vw;
+    width: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.single-photo img:hover {
+    border: 4px solid var(--about-white);
+}
+
+.single-photo img:active {
+    filter: brightness(0.3);
+}
