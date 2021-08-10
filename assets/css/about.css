@@ -121,8 +121,8 @@ horizontal scrolling in the mobile view */
     text-align: center;
 }
 
-.about-mission-stars-top,
-.about-mission-stars-bottom svg {
+.about-mission-leaves-top,
+.about-mission-leaves-bottom svg {
     transform: scale(2);
 }
 
