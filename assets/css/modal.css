@@ -81,3 +81,13 @@
     background-color: var(--black);
     padding: 10px 10px;
 }
+
+@media (max-width: 576px) {
+    .modal {
+        max-width: 95vw;
+        max-height: 80vh;
+    }
+    .modal-body {
+        padding: 30px 40px;
+    }
+}

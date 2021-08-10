@@ -21,13 +21,11 @@ function subscribeNewsletter() {
     const invalidEmail = document.querySelector('.invalid-email');
 
     if (validateEmail(email)) {
-        if (!invalidEmail.classList.contains('hidden'))
-            invalidEmail.classList.add('hidden');
+        invalidEmail.classList.add('hidden');
 
         window.open(emailURL, '_blank');
     } else {
-        if (invalidEmail.classList.contains('hidden'))
-            invalidEmail.classList.remove('hidden');
+        invalidEmail.classList.remove('hidden');
     }
 }
 
