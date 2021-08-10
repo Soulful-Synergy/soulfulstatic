@@ -29,6 +29,10 @@ button {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-flow: column;
@@ -389,15 +393,6 @@ footer {
 }
 
 /* End Footer */
-
-/* for email validation */
-.invalid-email {
-    font-size: 14px;
-    color: rgb(255, 109, 109);
-}
-.hidden {
-    display: none;
-}
 
 @media (max-width: 575px) {
     /* Begin Header */

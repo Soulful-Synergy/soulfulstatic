@@ -4,9 +4,31 @@
 :root {
     --about-white: #f4f4f4;
     --about-grey: #e9e9e9;
+    --about-btn-green: #1abc9c;
+    --about-btn-hover-green: #16a085;
     --about-hero-green: #33a26d;
     --about-section-bg: #4d9e85;
     --about-award-bg: rgb(43, 47, 49);
+}
+
+.scroll-back-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #33ad7c;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.25);
+    display: flex; /* or inline-flex */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.scroll-back-btn:hover {
+    transform: scale(1.1);
+    transition: 0.2s all;
 }
 
 /* this will fix/disable the unintended
@@ -71,7 +93,10 @@ horizontal scrolling in the mobile view */
     background-color: rgba(0, 0, 0, 0);
     color: var(--about-white);
     cursor: pointer;
+    text-decoration: none;
+    color: var(--about-white);
 }
+
 .about-hero-btn:hover {
     background-color: var(--about-white);
     color: var(--black);
@@ -90,19 +115,20 @@ horizontal scrolling in the mobile view */
 }
 
 .about-mission-text {
-    margin: 50px 0 50px 0;
+    margin: 50px 200px;
     font-family: 'Lobster', Arial, Helvetica, sans-serif;
     font-size: 2.2rem;
     text-align: center;
 }
 
+.about-mission-stars-top,
+.about-mission-stars-bottom svg {
+    transform: scale(2);
+}
+
 .about-section-header {
-    background: linear-gradient(
-        90deg,
-        rgba(15, 136, 71, 0.77) 27.17%,
-        rgba(40, 171, 139, 0.81) 53.32%,
-        #308ba2 86.59%
-    );
+    background-color: black;
+    background: linear-gradient(90deg, #1397bb 0%, #37b356 100%);
 
     color: var(--about-white);
     width: 100%;
@@ -131,7 +157,31 @@ horizontal scrolling in the mobile view */
 }
 
 .about-award-strip {
-    background-color: var(--about-award-bg);
+    background: #f0c27b; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #4b1248,
+        #f0c27b
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #4b1248,
+        #f0c27b
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /* option 2 */
+    background: #c04848; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to left,
+        #480048,
+        #c04848
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to left,
+        #480048,
+        #c04848
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     color: white;
     padding: 30px 0 30px 0;
     display: flex;
@@ -140,12 +190,13 @@ horizontal scrolling in the mobile view */
     align-items: center;
     width: 100vw;
     height: auto;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
 }
 
-.about-award-strip img {
-    width: 150px;
-    height: auto;
-    margin: 10px 0;
+.about-award-row {
+    margin-bottom: 5px;
 }
 
 .about-history-textarea {
@@ -154,8 +205,14 @@ horizontal scrolling in the mobile view */
     font-size: 1.2rem;
     font-weight: 400;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     padding: 8vh 5vw 8vh 5vw;
+}
+
+.about-history-textarea-leftcol,
+.about-history-textarea-rightcol {
+    max-width: 600px;
 }
 
 .about-history-textarea-leftcol {
@@ -175,11 +232,18 @@ horizontal scrolling in the mobile view */
     background-color: var(--black);
     color: white;
     display: flex;
-    flex: 1 0 20%;
     justify-content: center;
-    flex-wrap: wrap;
     padding: 30px 0;
 }
+
+.about-team-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1100px;
+}
+
 .about-team-profile {
     background-color: var(--about-grey);
     color: var(--black);
@@ -272,6 +336,7 @@ horizontal scrolling in the mobile view */
     padding: 20px;
 }
 
+/* media queries */
 @media (max-width: 1200px) {
 }
 
@@ -289,6 +354,22 @@ horizontal scrolling in the mobile view */
     }
 }
 
+@media (max-width: 992px) {
+    .about-mission-text {
+        margin: 50px 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-award-strip {
+        flex-direction: column;
+    }
+
+    .about-award-col:not(:last-of-type)::after {
+        content: '‒‒‒‒‒';
+    }
+}
+
 @media (max-width: 576px) {
     .about-hero-weare {
         font-size: 3rem;
@@ -300,5 +381,13 @@ horizontal scrolling in the mobile view */
 
     .about-section-header h1 {
         font-size: 2.5rem;
+    }
+
+    .modal {
+        max-width: 100vw;
+        max-height: 80vh;
+    }
+    .modal-body {
+        padding: 30px 40px;
     }
 }

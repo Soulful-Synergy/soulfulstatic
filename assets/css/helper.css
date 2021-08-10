@@ -26,3 +26,13 @@
 .flex-col {
     flex-direction: column;
 }
+
+/* for email validation */
+.invalid-email {
+    font-size: 14px;
+    color: rgb(255, 109, 109);
+}
+
+.hidden {
+    display: none;
+}
