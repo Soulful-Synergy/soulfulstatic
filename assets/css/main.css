@@ -73,6 +73,7 @@ header {
     width: 100%;
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 
 header #header-top-bar {
@@ -265,6 +266,7 @@ div#sub-nav {
 
 footer {
     margin-top: auto;
+    margin-bottom: 0;
 }
 
 .footer-container {
