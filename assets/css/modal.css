@@ -1,3 +1,8 @@
+:root {
+    --btn-green: #1abc9c;
+    --btn-hover-green: #16a085;
+}
+
 /* For Modals in About Page and (possibly) Farms Page  */
 
 /* for header and .main */
@@ -59,7 +64,7 @@
 
 .modal-buttons button {
     cursor: pointer;
-    background-color: var(--about-btn-green);
+    background-color: var(--btn-green);
     color: white;
     border: none;
     padding: 10px 30px;
@@ -69,12 +74,12 @@
 }
 
 .modal-buttons button:hover {
-    background-color: var(--about-btn-hover-green);
+    background-color: var(--btn-hover-green);
     transition: 0.1s all;
 }
 
 .modal-buttons button:active {
-    background-color: var(--about-btn-green);
+    background-color: var(--btn-green);
 }
 
 .modal-button-close button {

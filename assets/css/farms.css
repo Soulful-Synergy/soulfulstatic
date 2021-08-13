@@ -118,7 +118,7 @@
 }
 
 .glide__slides li img {
-    max-height: 275px;
+    height: 275px;
     max-width: 400px;
     width: auto;
     border: 5px solid #c07d3f;
@@ -149,7 +149,7 @@
 }
 
 .list-event {
-    cursor: pointer;
+    /* cursor: pointer; */
     background-color: #ebebeb;
     width: 370px;
     padding: 10px 0 10px 20px;
@@ -191,6 +191,7 @@
 .farms-ig-media-wrapper {
     max-width: 1300px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
