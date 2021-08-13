@@ -137,6 +137,22 @@ function applyBackgroundEffects(shouldShow) {
     }
 }
 
-function openEventModal() {
-    console.log('modal opened');
+/* Prefill Google Forms with contact information */
+
+function submitContactInfo() {
+    // const email = document.querySelector('.newsletter-email').value;
+    // const gFormsPrefillURL =
+    //     'https://docs.google.com/forms/d/e/1FAIpQLSdlN1qEEPRzLMKD5mK5EL_eidT3qMTQtonv2-w2bZqMmtTaBw/viewform?usp=pp_url&entry.372396029=';
+    // const emailURL = gFormsPrefillURL + email;
+
+    // const invalidEmail = document.querySelector('.invalid-email');
+
+    // if (validateEmail(email)) {
+    //     invalidEmail.classList.add('hidden');
+
+    //     window.open(emailURL, '_blank');
+    // } else {
+    //     invalidEmail.classList.remove('hidden');
+    // }
+    console.log('it works');
 }

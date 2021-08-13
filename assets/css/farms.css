@@ -201,6 +201,72 @@
     margin: 10px;
 }
 
+.farms-contact {
+    background-color: #1e2628;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.contact-img-holder img {
+    max-width: 430px;
+    height: auto;
+}
+
+.contact-form-holder input,
+.contact-form-holder select {
+    font-size: 1.4rem;
+}
+
+.contact-form-holder textarea {
+    font-size: 1rem;
+}
+
+.contact-form-holder input,
+.contact-form-holder select,
+.contact-form-holder textarea {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    display: block;
+    border: none;
+    width: 320px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contact-form-holder input:not(:focus),
+.contact-form-holder select:not(:focus) {
+    background-color: rgb(225, 225, 225);
+}
+
+.contact-form-holder button {
+    padding: 10px 20px;
+    width: 320px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: var(--btn-green);
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contact-form-holder button:hover {
+    background-color: var(--btn-hover-green);
+}
+
+.contact-form-holder button:active {
+    background-color: var(--btn-green);
+}
+
+.contact-form-holder {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
 @media (max-width: 819px) {
     .farms-events {
         flex-direction: column;
@@ -210,6 +276,7 @@
         margin-left: 0px;
         margin-top: 40px;
     }
+
     .farms-banner h1 {
         font-size: 2.7rem;
     }
@@ -217,8 +284,26 @@
     .farms-hero-text h1 {
         font-size: 3rem;
     }
+
     .farms-hero-text h3 {
         font-size: 1.8rem;
+    }
+
+    .contact-img-holder img {
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .farms-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form-holder {
+        margin-left: 0;
+        margin-top: 40px;
     }
 }
 

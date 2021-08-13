@@ -586,7 +586,29 @@
             <div class="farms-banner">
                 <h1>Contact</h1>
             </div>
-            <div class="farms-contact"></div>
+            <div class="farms-contact">
+                <div class="contact-img-holder">
+                    <img src="./assets/img/contact.jpg" alt="" />
+                </div>
+                <div class="contact-form-holder">
+                    <form
+                        action="javascript:void(0)"
+                        onsubmit="return submitContactInfo();"
+                    >
+                        <input type="text" placeholder="Full Name" required />
+                        <input type="email" placeholder="Email" required />
+                        <select name="pets" id="pet-select" required>
+                            <option value="">Subject</option>
+                            <option value="general">General</option>
+                            <option value="business">Business</option>
+                            <option value="inquiry">Inquiry</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <textarea name="" id="" rows="13" required></textarea>
+                        <button>Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
         <footer>
             <div class="footer-container">
