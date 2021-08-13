@@ -1,3 +1,5 @@
+/* Glide.js */
+
 const caro_1 = '#site-carousel-1';
 const caro_2 = '#site-carousel-2';
 const caro_3 = '#site-carousel-3';
@@ -33,7 +35,7 @@ const trainingCarousel = new Glide(caro_4, {
 }).mount();
 
 function addBullets(glider) {
-    console.log(glider.children);
+    // console.log(glider.children);
 }
 
 window.onload = (e) => {
@@ -44,3 +46,31 @@ window.onload = (e) => {
         addBullets(glider);
     });
 };
+
+/* caleandar.js */
+const eventsList = document.querySelector('#events-list');
+for (const child of eventsList.children) {
+    if (child.className !== 'list-event') {
+        continue;
+    }
+}
+
+/* Instagram Feed */
+
+const mediaDiv = document.querySelector('.farms-ig-media-wrapper');
+
+let igToken =
+    'IGQVJXWDhBVklhclNTYlNOMXhscXV0dFJCMG50X3lHZAzhvMlhKYmdzZAlNZAYmNVTHBmZAHR0bFRra3d4X1IzMEktRG5xRnpQVTFFWjYycjBCSWxuWmZAwOXNSRkIwc1dTaTNOckQxSTBTNlBFVzF1VXNUZAAZDZD';
+
+let ig;
+
+// fetch('https://www.instagram.com/_soulfulsynergy_/?__a=1')
+//     .then((response) => response.json())
+//     .then((data) => (ig = data));
+
+// console.log(ig);
+
+var feed = new Instafeed({
+    accessToken: igToken,
+});
+feed.run();

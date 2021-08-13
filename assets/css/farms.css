@@ -57,21 +57,36 @@
 }
 
 .farms-banner {
-    background: linear-gradient(
+    /* background: linear-gradient(
         90deg,
         rgba(15, 136, 71, 0.77) 27.17%,
         rgba(40, 171, 139, 0.9) 53.32%,
         #308ba2 86.59%
-    );
+    ); */
+
+    background: #d38312; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #a83279,
+        #d38312
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #a83279,
+        #d38312
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 130px;
+    height: 130px;
+    padding: 20px 0;
 }
 
 .farms-banner h1 {
     text-transform: uppercase;
+    text-align: center;
     font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
     font-weight: 400;
     color: white;
@@ -106,7 +121,7 @@
     max-height: 275px;
     max-width: 400px;
     width: auto;
-    border: 5px solid #1a8bad;
+    border: 5px solid #c07d3f;
     border-radius: 5px;
 }
 
@@ -118,12 +133,104 @@
     background-color: #1e2628;
     padding: 30px 0;
 }
-/* 
-.img-subtitle {
-    background-color: #1a8bad;
-} */
-/* 
-.subtitle-holder {
-    display: inline;
-    color: white;
-} */
+
+.farms-events {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #1e2628;
+    padding: 30px 0;
+}
+
+#events-list {
+    min-width: 380px;
+    margin-left: 40px;
+}
+
+.list-event {
+    cursor: pointer;
+    background-color: #ebebeb;
+    width: 370px;
+    padding: 10px 0 10px 20px;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+    margin-bottom: 5px;
+}
+
+.list-event:hover {
+    background-color: #f0cfa9;
+}
+
+.list-event-left {
+    margin-right: 15px;
+}
+
+.list-event-left img {
+    width: 75px;
+    height: 75px;
+}
+
+.list-event-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.list-event-text {
+    font-size: 0.9rem;
+}
+
+.farms-ig {
+    background-color: #1e2628;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.farms-ig-media-wrapper {
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ig-media-holder img {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+@media (max-width: 819px) {
+    .farms-events {
+        flex-direction: column;
+    }
+
+    #events-list {
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+    .farms-banner h1 {
+        font-size: 2.7rem;
+    }
+
+    .farms-hero-text h1 {
+        font-size: 3rem;
+    }
+    .farms-hero-text h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 542px) {
+    .farms-banner {
+        height: 100px;
+    }
+
+    .farms-banner h1 {
+        font-size: 2.2rem;
+    }
+
+    .farms-hero-text h1 {
+        font-size: 2.5rem;
+    }
+}
