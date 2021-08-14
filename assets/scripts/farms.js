@@ -1,9 +1,17 @@
+/* Lightbox Options */
+
+lightbox.option({
+    showImageNumberLabel: false,
+});
+
 /* Glide.js */
 
 const caro_1 = '#site-carousel-1';
 const caro_2 = '#site-carousel-2';
 const caro_3 = '#site-carousel-3';
 const caro_4 = '#training-carousel';
+
+// Carousels will autoplay at different intervals
 
 const siteCarousel_1 = new Glide(caro_1, {
     type: 'carousel',
@@ -140,19 +148,28 @@ function applyBackgroundEffects(shouldShow) {
 /* Prefill Google Forms with contact information */
 
 function submitContactInfo() {
-    // const email = document.querySelector('.newsletter-email').value;
-    // const gFormsPrefillURL =
-    //     'https://docs.google.com/forms/d/e/1FAIpQLSdlN1qEEPRzLMKD5mK5EL_eidT3qMTQtonv2-w2bZqMmtTaBw/viewform?usp=pp_url&entry.372396029=';
-    // const emailURL = gFormsPrefillURL + email;
+    const name = document.querySelector('#contact-name').value;
+    const email = document.querySelector('#contact-email').value;
+    const subject = document.querySelector('#contact-subject').value;
+    const textarea = document.querySelector('#contact-textarea').value;
+    const submit = document.querySelector('#contact-submit');
+    let gFormsPrefillURL =
+        'https://docs.google.com/forms/d/e/1FAIpQLSdlN1qEEPRzLMKD5mK5EL_eidT3qMTQtonv2-w2bZqMmtTaBw/viewform?usp=pp_url&entry.372396029=@email&entry.305389871=@name&entry.2056181665=@subject&entry.751024836=@textarea';
 
-    // const invalidEmail = document.querySelector('.invalid-email');
+    // Note to Eric: get a prefilled link for the actual google docs page which has:
+    // Name: as $name
+    // Email: as $email
+    // Subject: as $subject
+    // Message Field: as $textarea
 
-    // if (validateEmail(email)) {
-    //     invalidEmail.classList.add('hidden');
+    gFormsPrefillURL = gFormsPrefillURL
+        .replace('@name', name)
+        .replace('@email', email)
+        .replace('@subject', subject)
+        .replace('@textarea', textarea);
 
-    //     window.open(emailURL, '_blank');
-    // } else {
-    //     invalidEmail.classList.remove('hidden');
-    // }
-    console.log('it works');
+    console.log(gFormsPrefillURL);
+
+    const emailURL = gFormsPrefillURL;
+    window.open(emailURL, '_blank');
 }

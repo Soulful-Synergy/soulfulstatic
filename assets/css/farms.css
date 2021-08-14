@@ -119,7 +119,7 @@
 
 .glide__slides li img {
     height: 275px;
-    max-width: 400px;
+    max-width: 390px;
     width: auto;
     border: 5px solid #c07d3f;
     border-radius: 5px;
@@ -216,11 +216,13 @@
 
 .contact-form-holder input,
 .contact-form-holder select {
+    padding: 10px 20px;
     font-size: 1.4rem;
 }
 
 .contact-form-holder textarea {
     font-size: 1rem;
+    padding: 20px;
 }
 
 .contact-form-holder input,
@@ -230,7 +232,6 @@
     display: block;
     border: none;
     width: 320px;
-    padding: 10px 20px;
     margin-bottom: 20px;
     font-weight: 500;
 }
