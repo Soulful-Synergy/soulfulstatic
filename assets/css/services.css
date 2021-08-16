@@ -31,7 +31,7 @@ div {
 }
 
 .services-intro-text {
-  background-color: #264653;
+  background-color: #284b63;
   color: white;
 }
 
@@ -57,7 +57,7 @@ div {
   display: flex;
   min-width: 100vw;
   min-height: 60vh;
-  background-color: #129085;
+  background-color: #d9d9d9;
   justify-content: center;
   align-items: center;
 }
@@ -106,7 +106,9 @@ div {
   justify-content: center;
   text-align: center;
   align-items: center;
-  background-color: var(--black);
+
+  background: linear-gradient(180deg, #3c6e71 0%, #142830 100%);
+
   color: white;
   min-height: 350px;
   width: 250px;
@@ -127,12 +129,13 @@ div {
 .services-carousel-card:hover {
   cursor: pointer;
   transition: 0.1s all;
-  border: 5px solid white;
+  border: 5px solid var(--black);
   /* filter: invert(1); */
 }
 
 .services-card-invert {
-  background-color: #e5e1e0;
+  background: linear-gradient(180deg, #bbbbbb 0%, #dfdfdf 0.01%, #60727c 100%);
+
   color: var(--black);
   border: 5px solid var(--black) !important;
 }
@@ -150,7 +153,8 @@ div {
   */
   min-width: 100vw;
   min-height: 50vh;
-  background-color: #e5e1e0;
+  background-color: #284b63;
+  color: rgb(250, 250, 250);
   padding: 50px 100px;
 }
 
